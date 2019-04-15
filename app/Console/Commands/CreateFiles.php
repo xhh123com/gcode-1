@@ -14,7 +14,7 @@ class CreateFiles extends Command
      *
      * @var string
      */
-    protected $signature = 'auto:create';
+    protected $signature = 'auto:createFiles';
 
     /**
      * The console command description.
@@ -102,6 +102,8 @@ class CreateFiles extends Command
         $file_string = view('model', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
 
+        $file_string = self::replaceTags($file_string);
+
         Storage::disk('local')->put('/Code/Models/' . $model_name . ".php", $file_string);
     }
 
@@ -121,7 +123,19 @@ class CreateFiles extends Command
 
         $file_string = view('manager', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Components/' . $manager_name . ".php", $file_string);
     }
+
+
+    //替换文件字符
+    private function replaceTags($file_string)
+    {
+        $file_string = str_replace("<html>", "<?php", $file_string);
+        $file_string = str_replace("</html>", "", $file_string);
+        return $file_string;
+    }
+
+
 }
