@@ -6,4 +6,49 @@ gcode目前是用于快速生成标准化文件的工具，目前支持Models和
 
 # 使用方法
 
-1、下载gcode，
+1、下载gcode，并且配置.env文件，其中配置数据库连接信息即可，希望生成哪个数据库的Models和Components，即配置哪个数据库
+
+* DB_CONNECTION：数据库连接（一般不需要修改）
+* DB_HOST：数据库地址
+* DB_PORT：数据库端口（一般不需要修改）
+* DB_USERNAME：数据库用户名
+* DB_PASSWORD：数据库密码
+
+```
+
+DB_CONNECTION=mysql
+DB_HOST=
+DB_PORT=3306
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+
+```
+
+2、执行php artisan命令，核心创建文件的代码在app/Console/Commands/CreateFiles.php中
+
+配置的命令为 php artisan auto:createFiles ，在命令行中执行该命令，则将自动运行，运行日志如下
+
+```
+manager_name:UserQdManager
+
+columns:
+["id","user_id","phonenum","jifen","created_at","updated_at","deleted_at"]
+
+model code string:
+<html>
+
+
+/**
+ * Created by PhpStorm.
+ * User: mtt17
+ * Date: 2018/4/9
+ * Time: 11:32
+```
+
+
+3、正确运行后，将在/storage/app/Code文件夹下生成：
+
+* Models文件夹，其中是Model
+* Components文件夹，其中是Manager
+
