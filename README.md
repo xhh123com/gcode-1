@@ -52,3 +52,8 @@ model code string:
 * Models文件夹，其中是Model
 * Components文件夹，其中是Manager
 
+4、参考其他项目，将Models和Components拷贝到app目录下，完成项目基本信息建设
+
+
+@欢迎团队小伙伴协助进行项目优化，或者在使用中感觉需要哪些公共的类要生成，也可以补充或者新建命令
+
