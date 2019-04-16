@@ -71,6 +71,10 @@ class CreateFiles extends Command
             $r_prefix_table_name = substr($r_prefix_table_name, 2);
         }
 
+        //去掉_info信息，这样t_user_info，则会转变为user
+        $r_prefix_table_name = str_replace("_info", "", $r_prefix_table_name);
+
+
 //        echo "r_prefix_table_name:" . $r_prefix_table_name . "\n";
         $r_prefix_table_name_arr = explode('_', $r_prefix_table_name);
 //        echo "r_prefix_table_name_arr:" . json_encode($r_prefix_table_name_arr) . "\n";
