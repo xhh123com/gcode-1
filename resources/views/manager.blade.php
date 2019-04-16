@@ -40,6 +40,19 @@ class {{$manager_name}}
      */
     public static function getInfoByLevel($info, $level)
     {
+        //0:
+        if (strpos($level, '0') !== false) {
+
+        }
+        //1:
+        if (strpos($level, '1') !== false) {
+
+        }
+        //2:
+        if (strpos($level, '2') !== false) {
+
+        }
+
 
         return $info;
     }
