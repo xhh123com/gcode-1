@@ -33,11 +33,16 @@ class {{$model_name}}Controller
         $data = $request->all();
         //相关搜素条件
         $status = null;
+        $search_word = null;
         if (array_key_exists('status', $data) && !Utils::isObjNull($data['status'])) {
-        $status = $data['status'];
+            $status = $data['status'];
+        }
+        if (array_key_exists('search_word', $data) && !Utils::isObjNull($data['search_word'])) {
+            $search_word = $data['search_word'];
         }
         $con_arr = array(
-            'status' => $status
+            'status' => $status,
+            'search_word' => $search_word,
         );
         ${{$var_name}}s ={{$model_name}}Manager::getListByCon($con_arr, true);
         foreach (${{$var_name}}s as ${{$var_name}}) {

@@ -68,17 +68,20 @@ class {{$manager_name}}
      */
     public static function getListByCon($con_arr, $is_paginate)
     {
-
         $infos = new {{$model_name}}();
 
+        if (array_key_exists('search_word', $con_arr) && !Utils::isObjNull($con_arr['search_word'])) {
+            $keyword = $con_arr['search_word'];
+            $infos = $infos->where(function ($query) use ($keyword) {
+                $query->where('name', 'like', "%{$keyword}%");
+            });
+        }
     @foreach($columns as $column)
 
         if (array_key_exists('{{$column}}', $con_arr) && !Utils::isObjNull($con_arr['{{$column}}'])) {
             $infos = $infos->where('{{$column}}', '=', $con_arr['{{$column}}']);
         }
     @endforeach
-
-
 
         $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
         if ($is_paginate) {
