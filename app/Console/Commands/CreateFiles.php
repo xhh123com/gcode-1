@@ -61,7 +61,10 @@ class CreateFiles extends Command
 
             $var_name = self::getVarName($model_name);
             $controller_name = self::getControllerName($model_name);
+            //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name);
+            //生成APIController
+            self::createAPIController($model_name, $var_name, $controller_name);
 
             //向路由数组中推入数据
             $item = [
@@ -71,9 +74,11 @@ class CreateFiles extends Command
             array_push($route_param_items, $item);
         }
 
-
         //生成web路由
         self::createWebRoute($route_param_items);
+
+        //生成api路由
+        self::createAPIRoute($route_param_items);
 
     }
 
@@ -175,9 +180,9 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('adminController', $param)->__toString();
+        $file_string = view('admin.controller', $param)->__toString();
 
-        echo "\nmodel code string:\n" . $file_string . "\n";
+        echo "\nadmin.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Admin/' . $controller_name . ".php", $file_string);
@@ -189,12 +194,45 @@ class CreateFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('web_route', $param)->__toString();
+        $file_string = view('admin.web_route', $param)->__toString();
 
         echo "\nweb route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Route/web.php', $file_string);
+    }
+
+
+    //生成API的controller文件
+    private function createAPIController($model_name, $var_name, $controller_name)
+    {
+        $param = [
+            'model_name' => $model_name,
+            'var_name' => $var_name,
+            'controller_name' => $controller_name,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('api.controller', $param)->__toString();
+
+        echo "\napi.controller code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Api/' . $controller_name . ".php", $file_string);
+    }
+
+    //生成API route文件
+    private function createAPIRoute($route_param_items)
+    {
+        $param = [
+            'route_param_items' => $route_param_items
+        ];
+        $file_string = view('api.api_route', $param)->__toString();
+
+        echo "\napi route string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Route/api.php', $file_string);
     }
 
 
