@@ -40,6 +40,8 @@ class {{$manager_name}}
      */
     public static function getInfoByLevel($info, $level)
     {
+        $info->status_str = Project::COMMON_STATUS_VAL[$info->status];
+
         //0:
         if (strpos($level, '0') !== false) {
 

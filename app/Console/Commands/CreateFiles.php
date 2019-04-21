@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Components\DateTool;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -45,7 +46,9 @@ class CreateFiles extends Command
         $tables = DB::select("show tables");
         echo "the database tables:" . json_encode($tables) . "\n";
 
-        //循环获取表信息
+        $route_param_items = [];
+
+        //循环获取表信息，创建model、manager和controller
         foreach ($tables as $key => $value) {
             echo "\n\n\ntable " . json_encode($key) . ":" . json_encode($value->Tables_in_qyxdb) . "\n";
             $table_name = $value->Tables_in_qyxdb;     //表名
@@ -55,7 +58,23 @@ class CreateFiles extends Command
 
             $manager_name = self::getManagerName($model_name);      //manager名
             self::createManager($model_name, $table_name, $manager_name);     //建设Manager
+
+            $var_name = self::getVarName($model_name);
+            $controller_name = self::getControllerName($model_name);
+            self::createAdminController($model_name, $var_name, $controller_name);
+
+            //向路由数组中推入数据
+            $item = [
+                'var_name' => $var_name,
+                'model_name' => $model_name
+            ];
+            array_push($route_param_items, $item);
         }
+
+
+        //生成web路由
+        self::createWebRoute($route_param_items);
+
     }
 
 
@@ -87,13 +106,27 @@ class CreateFiles extends Command
         return $model_name;
     }
 
+    //根据model名生成变量名，即首字母小写
+    private function getVarName($model_name)
+    {
+        return lcfirst($model_name);
+    }
+
 
     //根据model名生成Manager名
-    private function getManagerName($mode_name)
+    private function getManagerName($model_name)
     {
-        $manager_name = $mode_name . "Manager";
+        $manager_name = $model_name . "Manager";
         echo "\nmanager_name:" . $manager_name . "\n";
         return $manager_name;
+    }
+
+    //根据model名生成Controller名
+    private function getControllerName($model_name)
+    {
+        $controller_name = $model_name . "Controller";
+        echo "\ncontroller_name:" . $controller_name . "\n";
+        return $controller_name;
     }
 
     //生成Model文件
@@ -130,6 +163,38 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Components/' . $manager_name . ".php", $file_string);
+    }
+
+    //生成admin的controller文件
+    private function createAdminController($model_name, $var_name, $controller_name)
+    {
+        $param = [
+            'model_name' => $model_name,
+            'var_name' => $var_name,
+            'controller_name' => $controller_name,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('adminController', $param)->__toString();
+
+        echo "\nmodel code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Admin/' . $controller_name . ".php", $file_string);
+    }
+
+    //生成web route文件
+    private function createWebRoute($route_param_items)
+    {
+        $param = [
+            'route_param_items' => $route_param_items
+        ];
+        $file_string = view('web_route', $param)->__toString();
+
+        echo "\nweb route string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Route/web.php', $file_string);
     }
 
 
