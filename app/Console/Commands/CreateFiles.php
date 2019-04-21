@@ -47,8 +47,8 @@ class CreateFiles extends Command
 
         //循环获取表信息
         foreach ($tables as $key => $value) {
-            echo "\n\n\ntable " . json_encode($key) . ":" . json_encode($value->Tables_in_zygwdb) . "\n";
-            $table_name = $value->Tables_in_zygwdb;     //表名
+            echo "\n\n\ntable " . json_encode($key) . ":" . json_encode($value->Tables_in_qyxdb) . "\n";
+            $table_name = $value->Tables_in_qyxdb;     //表名
 
             $model_name = self::getModelName($table_name);      //model名
             self::createModel($model_name, $table_name);            //建设model

@@ -69,9 +69,15 @@ class {{$manager_name}}
 
         $infos = new {{$model_name}}();
 
-        if (array_key_exists('status', $con_arr) && !Utils::isObjNull($con_arr['status'])) {
-            $infos = $infos->where('status', '=', $con_arr['status']);
+    @foreach($columns as $column)
+
+        if (array_key_exists('{{$column}}', $con_arr) && !Utils::isObjNull($con_arr['{{$column}}'])) {
+            $infos = $infos->where('{{$column}}', '=', $con_arr['{{$column}}']);
         }
+    @endforeach
+
+
+
         $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
         if ($is_paginate) {
             $infos = $infos->paginate(Utils::PAGE_SIZE);
@@ -94,7 +100,7 @@ class {{$manager_name}}
         @foreach($columns as $column)
 
         if (array_key_exists('{{$column}}', $data)) {
-                $info->{{$column}} = array_get($data, '{{$column}}');
+                $info->{{$column}} = $data['{{$column}}'];
             }
         @endforeach
 
