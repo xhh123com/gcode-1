@@ -58,6 +58,12 @@ class {{$model_name}}Controller
     {
         $data = $request->all();
         $status = '1';
+        $level='';
+        //配置获取信息级别
+        if (array_key_exists('level', $data) && !Utils::isObjNull($data['level'])) {
+            $level = $data['level'];
+        }
+
         //配置条件
         if (array_key_exists('status', $data) && !Utils::isObjNull($data['status'])) {
             $status = $data['status'];
@@ -67,7 +73,7 @@ class {{$model_name}}Controller
         );
         ${{$var_name}}s = {{$model_name}}Manager::getListByCon($con_arr, false);
         foreach (${{$var_name}}s as ${{$var_name}}) {
-            ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, '');
+            ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, $level);
         }
 
         return ApiResponse::makeResponse(true, ${{$var_name}}s, ApiResponse::SUCCESS_CODE);
