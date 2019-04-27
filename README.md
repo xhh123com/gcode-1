@@ -51,6 +51,9 @@ model code string:
 
 * Models文件夹，其中是Model
 * Components文件夹，其中是Manager
+* Admin，其中是Controller，管理后台的Controller
+* Api文件夹，其中是Controller，接口的Controller
+* Route文件夹，其中是web和api的路由
 
 4、参考其他项目，将Models和Components拷贝到app目录下，完成项目基本信息建设
 
