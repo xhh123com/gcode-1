@@ -9,7 +9,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-
+use App\Components\RequestValidator;
 use App\Components\{{$model_name}}Manager;
 use App\Components\QNManager;
 use App\Components\Utils;

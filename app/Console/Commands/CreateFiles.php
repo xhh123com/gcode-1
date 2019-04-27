@@ -42,7 +42,7 @@ class CreateFiles extends Command
     public function handle()
     {
         //开始进行文件创建
-        echo "start create files";
+        echo "start create files \n";
         $tables = DB::select("show tables");
         echo "the database tables:" . json_encode($tables) . "\n";
 
@@ -50,8 +50,12 @@ class CreateFiles extends Command
 
         //循环获取表信息，创建model、manager和controller
         foreach ($tables as $key => $value) {
-            echo "\n\n\ntable " . json_encode($key) . ":" . json_encode($value->Tables_in_wlds_testdb) . "\n";
-            $table_name = $value->Tables_in_wlds_testdb;     //表名
+            echo "\n\n\nkey:" . json_encode($key) . " value:" . json_encode($value);
+            //转换为数组
+            $value = json_decode(json_encode($value), true);
+            echo "\ntable " . json_encode($key) . ":" . json_encode($value['Tables_in_' . env('DB_DATABASE', '')]) . "\n";
+
+            $table_name = $value['Tables_in_' . env('DB_DATABASE', '')];     //表名
 
             $model_name = self::getModelName($table_name);      //model名
             self::createModel($model_name, $table_name);            //建设model

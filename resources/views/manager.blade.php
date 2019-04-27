@@ -55,6 +55,19 @@ class {{$manager_name}}
 
         }
 
+        //X:        脱敏
+        if (strpos($level, 'X') !== false) {
+
+        }
+        //Y:        压缩，去掉content_html等大报文信息
+        if (strpos($level, 'Y') !== false) {
+
+        }
+        //Z:        预留
+        if (strpos($level, 'Z') !== false) {
+
+        }
+
 
         return $info;
     }
