@@ -89,6 +89,11 @@ class {{$manager_name}}
                 $query->where('name', 'like', "%{$keyword}%");
             });
         }
+
+        if (array_key_exists('ids_arr', $con_arr) && !empty($con_arr['ids_arr'])) {
+            $infos = $infos->wherein('id', $con_arr['ids_arr']);
+        }
+
     @foreach($columns as $column)
 
         if (array_key_exists('{{$column}}', $con_arr) && !Utils::isObjNull($con_arr['{{$column}}'])) {
@@ -98,8 +103,14 @@ class {{$manager_name}}
 
         $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
         if ($is_paginate) {
-            $infos = $infos->paginate(Utils::PAGE_SIZE);
-        } else {
+            $page_size = Utils::PAGE_SIZE;
+            //如果con_arr中有page_size信息
+            if (array_key_exists('page_size', $con_arr) && !Utils::isObjNull($con_arr['page_size'])) {
+                $page_size = $con_arr['page_size'];
+            }
+            $infos = $infos->paginate($page_size);
+        }
+        else {
             $infos = $infos->get();
         }
         return $infos;
