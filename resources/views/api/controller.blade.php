@@ -71,7 +71,7 @@ class {{$model_name}}Controller
         $con_arr = array(
             'status' => $status,
         );
-        ${{$var_name}}s = {{$model_name}}Manager::getListByCon($con_arr, false);
+        ${{$var_name}}s = {{$model_name}}Manager::getListByCon($con_arr, true);
         foreach (${{$var_name}}s as ${{$var_name}}) {
             ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, $level);
         }
