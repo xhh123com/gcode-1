@@ -101,7 +101,17 @@ class {{$manager_name}}
         }
     @endforeach
 
+        //排序设定
+        if (array_key_exists('orderby', $con_arr) && is_array($con_arr['orderby'])) {
+            $orderby_arr = $con_arr['orderby'];
+            //例子，传入数据样式为'status'=>'desc'
+            if (array_key_exists('status', $orderby_arr) && !Utils::isObjNull($orderby_arr['status'])) {
+                $infos = $infos->orderby('status', $orderby_arr['status']);
+            }
+        }
         $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
+
+        //分页设定
         if ($is_paginate) {
             $page_size = Utils::PAGE_SIZE;
             //如果con_arr中有page_size信息
