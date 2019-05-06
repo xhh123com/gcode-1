@@ -7,6 +7,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
+use Monolog\Utils;
 
 class CreateFiles extends Command
 {
@@ -48,6 +49,8 @@ class CreateFiles extends Command
 
         $route_param_items = [];
 
+        $table_names = [];
+
         //循环获取表信息，创建model、manager和controller
         foreach ($tables as $key => $value) {
             echo "\n\n\nkey:" . json_encode($key) . " value:" . json_encode($value);
@@ -56,6 +59,8 @@ class CreateFiles extends Command
             echo "\ntable " . json_encode($key) . ":" . json_encode($value['Tables_in_' . env('DB_DATABASE', '')]) . "\n";
 
             $table_name = $value['Tables_in_' . env('DB_DATABASE', '')];     //表名
+
+            array_push($table_names, $table_name);
 
             $model_name = self::getModelName($table_name);      //model名
             self::createModel($model_name, $table_name);            //建设model
@@ -83,6 +88,10 @@ class CreateFiles extends Command
 
         //生成api路由
         self::createAPIRoute($route_param_items);
+
+        //生成修改字符集的信息
+        self::createAlertDB($table_names);
+
 
     }
 
@@ -237,6 +246,21 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Route/api.php', $file_string);
+    }
+
+
+    //生成tables修改utf8mb4的代码
+    private function createAlertDB($table_names)
+    {
+        $param = [
+            'table_names' => $table_names
+        ];
+        $file_string = view('db.alertCharset', $param)->__toString();
+
+        echo "\nalert charset string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/DB/alertChartset.text', $file_string);
     }
 
 
