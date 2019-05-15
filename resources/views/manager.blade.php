@@ -11,7 +11,7 @@
 namespace App\Components;
 
 
-use App\Components\Utils;
+use App\Components\Common\Utils;
 use App\Models\{{$model_name}};
 
 class {{$manager_name}}
@@ -61,7 +61,7 @@ class {{$manager_name}}
         }
         //Y:        压缩，去掉content_html等大报文信息
         if (strpos($level, 'Y') !== false) {
-
+            unset($info->content_html);
         }
         //Z:        预留
         if (strpos($level, 'Z') !== false) {

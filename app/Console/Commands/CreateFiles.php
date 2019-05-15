@@ -68,16 +68,17 @@ class CreateFiles extends Command
             $manager_name = self::getManagerName($model_name);      //manager名
             self::createManager($model_name, $table_name, $manager_name);     //建设Manager
 
-            $var_name = self::getVarName($model_name);
+            $var_name = self::getVarNameByTableName($table_name);
+            $router_blade_var_name = self::getVarName($model_name);
             $controller_name = self::getControllerName($model_name);
             //生成AdminController
-            self::createAdminController($model_name, $var_name, $controller_name);
+            self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
             //生成APIController
-            self::createAPIController($model_name, $var_name, $controller_name);
+            self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
 
             //向路由数组中推入数据
             $item = [
-                'var_name' => $var_name,
+                'var_name' => $router_blade_var_name,
                 'model_name' => $model_name
             ];
             array_push($route_param_items, $item);
@@ -130,6 +131,24 @@ class CreateFiles extends Command
         return lcfirst($model_name);
     }
 
+
+    //根据表名生成变量名，采用_下划线的方式
+    private function getVarNameByTableName($table_name)
+    {
+        /*
+        * 此处请注意，要求表格前缀为t_，这样主要是标明
+        */
+        $prefix_chars = substr($table_name, 0, 2);
+        $r_prefix_table_name = $table_name;
+        if ($prefix_chars == 't_') {
+            $r_prefix_table_name = substr($r_prefix_table_name, 2);
+        }
+
+        //去掉_info信息，这样t_user_info，则会转变为user
+        $r_prefix_table_name = str_replace("_info", "", $r_prefix_table_name);
+
+        return $r_prefix_table_name;
+    }
 
     //根据model名生成Manager名
     private function getManagerName($model_name)
@@ -184,12 +203,13 @@ class CreateFiles extends Command
     }
 
     //生成admin的controller文件
-    private function createAdminController($model_name, $var_name, $controller_name)
+    private function createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name)
     {
         $param = [
             'model_name' => $model_name,
             'var_name' => $var_name,
             'controller_name' => $controller_name,
+            'router_blade_var_name' => $router_blade_var_name,
             'date_time' => DateTool::getCurrentTime()
         ];
 
@@ -217,12 +237,13 @@ class CreateFiles extends Command
 
 
     //生成API的controller文件
-    private function createAPIController($model_name, $var_name, $controller_name)
+    private function createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name)
     {
         $param = [
             'model_name' => $model_name,
             'var_name' => $var_name,
             'controller_name' => $controller_name,
+            'router_blade_var_name' => $router_blade_var_name,
             'date_time' => DateTool::getCurrentTime()
         ];
 

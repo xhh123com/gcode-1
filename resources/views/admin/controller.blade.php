@@ -9,11 +9,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Components\RequestValidator;
+use App\Components\Common\RequestValidator;
 use App\Components\{{$model_name}}Manager;
-use App\Components\QNManager;
-use App\Components\Utils;
-use App\Http\Controllers\ApiResponse;
+use App\Components\Common\QNManager;
+use App\Components\Common\Utils;
+use App\Components\Common\ApiResponse;
 use App\Models\{{$model_name}};
 use Illuminate\Http\Request;
 
@@ -49,7 +49,7 @@ class {{$model_name}}Controller
         ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, '');
         }
 
-        return view('admin.{{$var_name}}.index', ['admin' => $admin, 'datas' => ${{$var_name}}s, 'con_arr' => $con_arr]);
+        return view('admin.{{$router_blade_var_name}}.index', ['admin' => $admin, 'datas' => ${{$var_name}}s, 'con_arr' => $con_arr]);
     }
 
     /*
@@ -69,7 +69,7 @@ class {{$model_name}}Controller
         if (array_key_exists('id', $data)) {
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
         }
-        return view('admin.{{$var_name}}.edit', ['admin' => $admin, 'data' => ${{$var_name}}, 'upload_token' => $upload_token]);
+        return view('admin.{{$router_blade_var_name}}.edit', ['admin' => $admin, 'data' => ${{$var_name}}, 'upload_token' => $upload_token]);
     }
 
 
@@ -139,7 +139,7 @@ class {{$model_name}}Controller
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
         ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, '0');
 
-        return view('admin.{{$var_name}}.info', ['admin' => $admin, 'data' => ${{$var_name}}]);
+        return view('admin.{{$router_blade_var_name}}.info', ['admin' => $admin, 'data' => ${{$var_name}}]);
     }
 
 }

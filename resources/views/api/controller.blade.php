@@ -10,9 +10,11 @@
 namespace App\Http\Controllers\Api;
 
 
-use App\Components\RequestValidator;
+use App\Components\Common\RequestValidator;
 use App\Components\{{$model_name}}Manager;
-use App\Http\Controllers\ApiResponse;
+use App\Components\Common\QNManager;
+use App\Components\Common\Utils;
+use App\Components\Common\ApiResponse;
 use Illuminate\Http\Request;
 
 class {{$model_name}}Controller
