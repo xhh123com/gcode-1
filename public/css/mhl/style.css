@@ -1,0 +1,536 @@
+/*
+ * 页面基本样式
+ *
+ * By TerryQi  2017-10-19
+ */
+
+.liner-gradient {
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(242, 48, 48, .5)), to(rgba(242, 48, 48, .8)));
+    background: -moz-linear-gradient(top, rgba(242, 48, 48, .5), rgba(242, 48, 48, .8));
+}
+* {
+    -webkit-user-select: text;
+    -user-select: text;
+}
+html, body {
+    line-height: 22px;
+    height: 100% !important;
+    background-color: #f1f1f1;
+}
+
+.main-font-color {
+    color: #b42127 !important;
+}
+
+.white-font-color {
+    color: #fff !important;
+}
+
+.red-font-color {
+    color: #f23030 !important;
+}
+
+.aui-font-size-22 {
+    font-size: 1.1rem !important;
+}
+
+.aui-font-size-24 {
+    font-size: 1.2rem !important;
+}
+
+.aui-font-size-26 {
+    font-size: 1.3rem !important;
+}
+
+.aui-font-size-28 {
+    font-size: 1.4rem !important;
+}
+
+.aui-font-size-30 {
+    font-size: 1.5rem !important;
+}
+
+.white-bg {
+    background-color: #ffffff !important;
+}
+
+.grey-bg {
+    background-color: #eeeeee !important;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+.main-bg {
+    background-color: #ffffff !important;
+}
+.color-bg{
+    background-color: transparent;
+}
+
+.aui-list-item .inputText {
+    text-align: right;
+}
+
+.aui-text-grey {
+    color: #999999 !important;
+}
+
+.aui-text-deep-grey {
+    color: #505050 !important;
+}
+
+.aui-text-white {
+    color: #fff !important;
+}
+
+.aui-text-black {
+    color: #000 !important;
+}
+
+.aui-text-fff {
+    color: #fff !important;
+}
+
+.aui-text-ccc {
+    color: #ccc !important;
+}
+
+.aui-text-999 {
+    color: #999 !important;
+}
+
+.aui-text-666 {
+    color: #666 !important;
+}
+
+.aui-text-333 {
+    color: #333 !important;
+}
+
+.aui-text-757575 {
+    color: #757575 !important;
+}
+
+.aui-text-link {
+    color: #5a98de !important;
+}
+
+.font-color {
+    color: #666666 !important;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+/*小图标*/
+.icon-style {
+    width: 16px;
+    height: 16px;
+}
+
+.tab-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.tab-item-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.arq-img {
+    width: 32px;
+    height: 32px;
+}
+
+.att-img {
+    width: 75px;
+    height: 75px;
+}
+
+select {
+    direction: rtl;
+}
+
+.aui-list-item .fontCls {
+    font-size: 0.6rem;
+    color: #757575;
+}
+
+.aui-list-item .inputText {
+    text-align: right;
+}
+
+.iconright {
+    padding-right: 10px;
+}
+.aui-padded-t-10 {
+    padding-top: 0.5rem !important;
+}
+.aui-padded-t-15 {
+    padding-top: 0.75rem !important;
+}
+.aui-padded-t-20 {
+    padding-top: 1rem !important;
+}
+
+.aui-padded-t-25 {
+    padding-top: 1.25rem !important;
+}
+
+.aui-padded-t-30 {
+    padding-top: 1.5rem !important;
+}
+
+.aui-padded-t-35 {
+    padding-top: 1.75rem !important;
+}
+
+.aui-padded-t-40 {
+    padding-top: 2rem !important;
+}
+.aui-padded-t-50 {
+    padding-top: 2.5rem !important;
+}
+.aui-padded-t-60 {
+    padding-top: 3rem !important;
+}
+.aui-padded-r-20 {
+    padding-right: 1rem !important;
+}
+
+.aui-padded-b-20 {
+    padding-bottom: 1rem !important;
+}
+.aui-padded-b-30 {
+    padding-bottom: 1.5rem !important;
+}
+.aui-padded-l-20 {
+    padding-left: 1rem !important;
+}
+
+.aui-padded-l-25 {
+    padding-left: 1.25rem !important;
+}
+
+.aui-padded-l-30 {
+    padding-left: 1.5rem !important;
+}
+
+.aui-padded-l-35 {
+    padding-left: 1.75rem !important;
+}
+
+.aui-padded-l-40 {
+    padding-left: 2rem !important;
+}
+.aui-padded-l-45 {
+    padding-left: 2.25rem !important;
+}
+.aui-padded-l-60 {
+    padding-left: 3rem !important;
+}
+
+.aui-margin-l-20 {
+    margin-left: 1rem !important;
+}
+
+.aui-margin-l-25 {
+    margin-left: 1.25rem !important;
+}
+
+.aui-margin-l-30 {
+    margin-left: 1.5rem !important;
+}
+
+.aui-margin-l-35 {
+    margin-left: 1.75rem !important;
+}
+
+.aui-margin-l-40 {
+    margin-left: 2.0rem !important;
+}
+
+.aui-margin-l-45 {
+    margin-left: 2.25rem !important;
+}
+
+.aui-margin-l-50 {
+    margin-left: 2.5rem !important;
+}
+
+.aui-margin-l-55 {
+    margin-left: 2.75rem !important;
+}
+
+.aui-margin-l-60 {
+    margin-left: 3.0rem !important;
+}
+
+.aui-margin-l-80 {
+    margin-left: 4.0rem !important;
+}
+
+.aui-margin-l-100 {
+    margin-left: 5.0rem !important;
+}
+
+.aui-margin-l-120 {
+    margin-left: 6.0rem !important;
+}
+.aui-margin-r-25 {
+    margin-right:  1.25rem !important;
+}
+.aui-margin-r-20 {
+    margin-right:  1rem !important;
+}
+
+.aui-margin-t-20 {
+    margin-top: 1rem !important;
+}
+
+.aui-margin-t-25 {
+    margin-top: 1.25rem !important;
+}
+
+.aui-margin-t-30 {
+    margin-top: 1.5rem !important;
+}
+
+.aui-margin-t-35 {
+    margin-top: 1.75rem !important;
+}
+
+.aui-margin-t-40 {
+    margin-top: 2rem !important;
+}
+.aui-margin-t-45 {
+    margin-top: 2.25rem !important;
+}
+.aui-margin-t-50 {
+    margin-top: 2.5rem !important;
+}
+.aui-margin-t-60 {
+    margin-top: 3rem !important;
+}
+.text-oneline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.text-twoline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.text-threeline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.text-fourline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.text-fiveline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.aui-font-size-8 {
+    font-size: 0.3rem !important;
+}
+
+.aui-font-size-10 {
+    font-size: 0.4rem !important;
+}
+
+.aui-font-size-24 {
+    font-size: 1.2rem !important;
+}
+
+.aui-font-size-28 {
+    font-size: 1.4rem !important;
+}
+
+.aui-font-size-30 {
+    font-size: 1.6rem !important;
+}
+.aui-font-size-40 {
+    font-size: 2.6rem !important;
+}
+.swiper-container {
+    width: 100%;
+    height: 200px;
+}
+
+.swiper-container img {
+    width: 100%;
+}
+
+.swiper-container-horizontal > .swiper-pagination {
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #b42127;
+}
+
+.swiper-text h3 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    line-height: 1rem;
+    font-size: .8rem;
+    color: #fff;
+    width: 60%;
+}
+
+.swiper-text p {
+    margin-top: .5rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    line-height: 1rem;
+    font-size: .75rem;
+    color: #ccc;
+    width: 70%;
+}
+
+.swiper-text h3:before {
+    content: "";
+    width: 3rem;
+    position: absolute;
+    bottom: -.6rem;
+    left: 0;
+    /*border: 2px solid #00cc99;*/
+}
+
+.mark {
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aui-bar-tab .aui-active {
+    color:#ff4d03 !important;
+}
+
+.aui-bar-tab .aui-bar-tab-label {
+    font-size: 0.7rem !important;
+}
+
+input::-webkit-input-placeholder {
+
+    color: #BCBBBB;
+
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.color {
+    color:#b27c44 !important;
+}
+
+.float {
+    float: left;
+}
+
+.aui-list-item .fontCls {
+    font-size: 0.6rem;
+    color: #757575;
+}
+
+.aui-list-item .inputText {
+    text-align: right;
+}
+.line{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    line-height: 35px !important;
+}
+.follow_end{
+    width: 45px;
+    height: 18px;
+    line-height:16px;
+    border-radius: 5px;
+    color:#bdbdbd
+}
+.follow_start{
+    width:45px;
+    height: 18px;
+    line-height:16px;
+    border: 1px solid #10436b;
+    border-radius: 5px;
+    color:#10436b
+}
+/*角标*/
+.aui-badge-delete {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    min-width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.2rem;
+    font-size: 0.6rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 60%;
+    z-index: 99;
+}
+.tm{
+    opacity:0.4;
+    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+
+}
+.color_text{
+   color: #fdd3C0 !important;
+}

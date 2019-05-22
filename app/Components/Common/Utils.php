@@ -148,37 +148,6 @@ class Utils
         return $response;
     }
 
-    /**
-     * 经纬度转GeoHash编码
-     *
-     * $lat  $lon经纬度参数
-     *
-     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
-     *
-     * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
-     */
-    public static function latAndLngCoding($lat, $lon, $key, $distance)
-    {
-        $geohash = new GeoHash();
-        $geo = $geohash->encode($lat, $lon);
-
-        if ($key == 1) {
-            //取出相邻八个区域
-            $geo = substr($geo, 0, $distance);
-            $neighbors = $geohash->neighbors($geo);
-            array_push($neighbors, $geo);
-            $values = [];
-            foreach ($neighbors as $key => $val) {
-                array_push($values, $val);
-//                $values .= '\'' . $val . '\'' .',';
-            }
-            $geo = $values;
-        }
-
-        return $geo;
-    }
-
-
     /*
      * 生成num位邀请码
      *
@@ -206,6 +175,30 @@ class Utils
             $f++
         ) ;
         return $d;
+    }
+
+
+    /**
+     * 获取随机字符串
+     * @param int $randLength 长度
+     * @param int $addtime 是否加入当前时间戳
+     * @param int $includenumber 是否包含数字
+     * @return string
+     */
+    public static function rand_str($randLength = 10, $includenumber = 1)
+    {
+        if ($includenumber) {
+            $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        } else {
+            $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        }
+        $len = strlen($chars);
+        $randStr = '';
+        for ($i = 0; $i < $randLength; $i++) {
+            $randStr .= $chars[mt_rand(0, $len - 1)];
+        }
+
+        return $randStr;
     }
 
     /*
@@ -390,6 +383,180 @@ class Utils
     }
 
 
+    /**
+     * 经纬度转GeoHash编码
+     *
+     * $lat  $lon经纬度参数
+     *
+     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
+     *
+     * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
+     */
+    public static function latAndLngCoding($lat, $lon, $key, $distance = null)
+    {
+        $geohash = new GeoHash();
+        $geo = $geohash->encode($lat, $lon);
+        Utils::processLog(__METHOD__, '', 'geo:' . json_encode($geo));
+        if (!Utils::isObjNull($distance)) {
+            $geo = substr($geo, 0, $distance);
+        }
+        Utils::processLog(__METHOD__, '', 'substr geo:' . json_encode($geo));
+        return $geo;
+    }
+
+    /*
+         * 统计数据补领工具
+         *
+         * By TerryQi
+         *
+         * 要求数组的元素格式为 ["data"=>$data,'value'=>$value]，data代表日期、value代表具体的值
+         *
+         * 入参要求
+         *
+         * @arr 数组样式：必须参考元素格式，即data和value的格式
+         * @start_at 开始日期，必须为2018-11-28的格式
+         * @end_at 结束日期，必须为2018-12-01的格式
+         *
+         * 输出数组，将日期空缺补零
+         *
+         */
+    public static function replZero($arr, $start_at, $end_at)
+    {
+        $nums = DateTool::dateDiff('D', $start_at, $end_at);
+        //进行补零动作
+        $replZero_arr = [];        //处理后的数组
+        for ($i = 0; $i < $nums; $i++) {
+            $date_at = DateTool::dateAdd('D', $i, $start_at, 'Y-m-d');
+            //代表有值
+            $index = self::isDateInStatisArr($date_at, $arr);
+            $item = null;
+            if ($index != -1) {
+                $item = array(
+                    'date' => $arr[$index]['date'],
+                    'value' => $arr[$index]['value']
+                );
+            } else {
+                $item = array(
+                    'date' => $date_at,
+                    'value' => 0
+                );
+            }
+            array_push($replZero_arr, $item);
+        }
+        return $replZero_arr;
+    }
+
+
+    //配合replZero使用，判断arr中有没有data_at的数据
+    //如果有返回i，即具体位置，否则返回-1
+    //该方法能够仅限于支撑replZero方法
+    /*
+     * By TerryQi
+     *
+     * @date_at 为arr中date的具体指，arr为数组，格式为[["data"=>$data,'value'=>$value],.....]
+     *
+     * @return 如果有值返回 index，如果没有值返回-1
+     */
+    public static function isDateInStatisArr($date_at, $arr)
+    {
+        //循环数组
+        for ($i = 0; $i < count($arr); $i++) {
+            if ($arr[$i]['date'] == $date_at) {
+                return $i;
+            }
+        }
+        return -1;
+    }
+
+    /*
+     * 字符串截取
+     *
+     * By TerryQi
+     *
+     * 2018-12-05
+     *
+     * @str：需要截取的字符串 start：开始位置 length：长度 chartset：字符集 suffix 结束符
+     */
+
+    public static function substr_text($str, $start = 0, $length, $charset = "utf-8", $suffix = "")
+    {
+        if (function_exists("mb_substr")) {
+            return mb_substr($str, $start, $length, $charset) . $suffix;
+        } elseif (function_exists('iconv_substr')) {
+            return iconv_substr($str, $start, $length, $charset) . $suffix;
+        }
+        $re['utf-8'] = "/[\x01-\x7f]|[\xc2-\xdf][\x80-\xbf]|[\xe0-\xef][\x80-\xbf]{2}|[\xf0-\xff][\x80-\xbf]{3}/";
+        $re['gb2312'] = "/[\x01-\x7f]|[\xb0-\xf7][\xa0-\xfe]/";
+        $re['gbk'] = "/[\x01-\x7f]|[\x81-\xfe][\x40-\xfe]/";
+        $re['big5'] = "/[\x01-\x7f]|[\x81-\xfe]([\x40-\x7e]|\xa1-\xfe])/";
+        preg_match_all($re[$charset], $str, $match);
+        $slice = join("", array_slice($match[0], $start, $length));
+        return $slice . $suffix;
+    }
+
+    /*
+     * 配置文字自动换行
+     *
+     * By TerryQi
+     *
+     * 2018-12-05
+     *
+     * 字体大小:fontsize, 角度:angle, 字体名称:fontface, 字符串:string, 预设宽度:width
+     *
+     */
+    public static function autowrap($fontsize, $angle, $fontface, $string, $width)
+    {
+        $content = "";
+
+        // 将字符串拆分成一个个单字 保存到数组 letter 中
+        for ($i = 0; $i < mb_strlen($string); $i++) {
+            $letter[] = mb_substr($string, $i, 1);
+        }
+
+        foreach ($letter as $l) {
+            $teststr = $content . " " . $l;
+            $testbox = imagettfbbox($fontsize, $angle, $fontface, $teststr);
+            // 判断拼接后的字符串是否超过预设的宽度
+            if (($testbox[2] > $width) && ($content !== "")) {
+                $content .= "\n";
+            }
+            $content .= $l;
+        }
+
+        return $content;
+    }
+
+
+    /**
+     * 根据时间戳计算年龄
+     * @param $birth
+     * @return mixed
+     */
+    public static function getAge($birthday)
+    {
+        $iage = 0;
+        if (!empty($birthday)) {
+            $year = date('Y', strtotime($birthday));
+            $month = date('m', strtotime($birthday));
+            $day = date('d', strtotime($birthday));
+
+            $now_year = date('Y');
+            $now_month = date('m');
+            $now_day = date('d');
+
+            if ($now_year > $year) {
+                $iage = $now_year - $year - 1;
+                if ($now_month > $month) {
+                    $iage++;
+                } else if ($now_month == $month) {
+                    if ($now_day >= $day) {
+                        $iage++;
+                    }
+                }
+            }
+        }
+        return $iage;
+    }
 
 
 
@@ -496,26 +663,6 @@ class Utils
         } else {
             Log::info('[' . $label . ']  ' . $LOGO_NO . '  ' . $logData);
         }
-        Session::remove("LOGO_NO");
-    }
-
-    /**
-     * 返回接口LOG
-     * @param string $logModular 模块
-     * @param array $logData 数据
-     */
-    public static function responseLog($logModular = "", $logData = [])
-    {
-        $LOGO_NO = Session::get("LOGO_NO");
-        $log = array(
-            'code' => $logData['code'],
-            'result' => $logData['result'],
-            'message' => $logData['message'],
-        );
-        if (array_key_exists('ret', $logData)) {
-            $log['ret'] = $logData['ret'];
-        }
-        Log::info('[RESPONSE]  ' . $LOGO_NO . '  ' . $logModular . '  ' . json_encode($log, true));
         Session::remove("LOGO_NO");
     }
 
