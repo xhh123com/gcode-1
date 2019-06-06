@@ -20,9 +20,9 @@ class {{$manager_name}}
     /*
      * getById
      *
-     * By TerryQi
-     *
-     * 2019-4-15
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
      */
     public static function getById($id)
     {
@@ -33,9 +33,9 @@ class {{$manager_name}}
     /*
      * getInfoByLevel
      *
-     * By TerryQi
-     *
-     * 2019-02-25
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
      *
      */
     public static function getInfoByLevel($info, $level)
@@ -75,9 +75,9 @@ class {{$manager_name}}
     /*
      * getListByCon
      *
-     * By mtt
-     *
-     * 2018-4-9
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
      */
     public static function getListByCon($con_arr, $is_paginate)
     {
@@ -129,9 +129,9 @@ class {{$manager_name}}
     /*
      * setInfo
      *
-     * By TerryQi
-     *
-     * 2018-06-11
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
      */
     public static function setInfo($info, $data)
     {
@@ -143,6 +143,33 @@ class {{$manager_name}}
             }
         @endforeach
 
+        return $info;
+    }
+
+    /*
+    * 统一封装数量操作，部分对象涉及数量操作，例如产品销售，剩余数等，统一通过该方法封装
+    *
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
+    *
+    * @param id：对象id item：操作对象 num：加减数值
+    */
+    public static function setNum($id, $item, $num)
+    {
+        $info = self::getById($id);
+        switch ($item) {
+            case "show_num":
+                $info->show_num = $info->show_num + $num;
+            break;
+            case "left_num":
+                $info->left_num = $info->left_num + $num;
+                break;
+            case "send_num":
+                $info->send_num = $info->send_num + $num;
+                break;
+        }
+        $info->save();
         return $info;
     }
 
