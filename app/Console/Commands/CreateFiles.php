@@ -192,7 +192,8 @@ class CreateFiles extends Command
             'model_name' => $model_name,
             'table_name' => $table_name,
             'manager_name' => $manager_name,
-            'columns' => $columns
+            'columns' => $columns,
+            'date_time' => DateTool::getCurrentTime()
         ];
 
         $file_string = view('manager', $param)->__toString();

@@ -121,14 +121,11 @@ class ApiResponse
             }
         } else {
             $respones['result'] = false;
-            if ($ret) {
-                $respones['message'] = $ret;
+            $respones['ret'] = $ret;
+            if (array_key_exists($code, self::$errorMassage)) {
+                $respones['message'] = self::$errorMassage[$code];
             } else {
-                if (array_key_exists($code, self::$errorMassage)) {
-                    $respones['message'] = self::$errorMassage[$code];
-                } else {
-                    $respones['message'] = 'undefind error code';
-                }
+                $respones['message'] = 'undefind error code';
             }
         }
 
