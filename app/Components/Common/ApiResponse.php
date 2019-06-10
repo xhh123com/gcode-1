@@ -61,7 +61,7 @@ class ApiResponse
     const ALREDAY_THANK = 503;
 
     /* 映射错误信息 */
-    public static $errorMassage = [
+    public static $errorMessage = [
         self::SUCCESS_CODE => '成功',
 
         self::UNKNOW_ERROR => '未知错误',
@@ -117,7 +117,7 @@ class ApiResponse
             if (isset($message)) {
                 $respones['message'] = $message;
             } else {
-                $respones['message'] = self::$errorMassage[$code];
+                $respones['message'] = self::$errorMessage[$code];
             }
         } else {
             $respones['result'] = false;
@@ -125,8 +125,8 @@ class ApiResponse
             if (isset($message)) {
                 $respones['message'] = $message;
             } else {
-                if (array_key_exists($code, self::$errorMassage)) {
-                    $respones['message'] = self::$errorMassage[$code];
+                if (array_key_exists($code, self::$errorMessage)) {
+                    $respones['message'] = self::$errorMessage[$code];
                 } else {
                     $respones['message'] = 'undefind error code';
                 }
