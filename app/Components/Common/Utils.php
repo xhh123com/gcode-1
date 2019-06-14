@@ -433,7 +433,7 @@ class Utils
             if ($index != -1) {
                 $item = array(
                     'date' => $arr[$index]['date'],
-                    'value' => number_format($arr[$index]['value'], 2)
+                    'value' => round($arr[$index]['value'], 2)
                 );
             } else {
                 $item = array(
