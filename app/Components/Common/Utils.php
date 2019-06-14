@@ -405,21 +405,21 @@ class Utils
     }
 
     /*
-         * 统计数据补领工具
-         *
-         * By TerryQi
-         *
-         * 要求数组的元素格式为 ["data"=>$data,'value'=>$value]，data代表日期、value代表具体的值
-         *
-         * 入参要求
-         *
-         * @arr 数组样式：必须参考元素格式，即data和value的格式
-         * @start_at 开始日期，必须为2018-11-28的格式
-         * @end_at 结束日期，必须为2018-12-01的格式
-         *
-         * 输出数组，将日期空缺补零
-         *
-         */
+     * 统计数据补领工具
+     *
+     * By TerryQi
+     *
+     * 要求数组的元素格式为 ["data"=>$data,'value'=>$value]，data代表日期、value代表具体的值
+     *
+     * 入参要求
+     *
+     * @arr 数组样式：必须参考元素格式，即data和value的格式
+     * @start_at 开始日期，必须为2018-11-28的格式
+     * @end_at 结束日期，必须为2018-12-01的格式
+     *
+     * 输出数组，将日期空缺补零
+     *
+     */
     public static function replZero($arr, $start_at, $end_at)
     {
         $nums = DateTool::dateDiff('D', $start_at, $end_at);
@@ -433,7 +433,7 @@ class Utils
             if ($index != -1) {
                 $item = array(
                     'date' => $arr[$index]['date'],
-                    'value' => $arr[$index]['value']
+                    'value' => number_format($arr[$index]['value'], 2)
                 );
             } else {
                 $item = array(
