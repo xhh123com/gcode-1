@@ -28,6 +28,14 @@ class Utils
     const COMMON_STATUS_VAL = ['0' => '失效', '1' => '有效'];
     const COMMON_STATUS_1 = '1';
     const COMMON_STATUS_0 = '0';
+    //通用的默认设置
+    const DEFAULT_VAL = ['0' => '非默认', '1' => '默认'];
+    const DEFAULT_STATUS_1 = '1';
+    const DEFAULT_STATUS_0 = '0';
+    //通用的结果
+    const RESULT_STATUS_VAL = ['0' => '失败', '1' => '成功'];
+    const RESULT_STATUS_0 = '0';
+    const RESULT_STATUS_1 = '1';
     //推荐状态
     const RECOMM_FLAG_VAL = ['0' => '未推荐', '1' => '已推荐'];
     const RECOMM_FLAG_1 = '1';
@@ -52,7 +60,7 @@ class Utils
     const PAY_STATUS_VAL = ['0' => '未支付', '1' => '已支付'];
 
     //审核状态
-    const AUDIT_STATUS_VAL = ['0' => '待审核', '1' => '审核通过', '2' => '审核驳回'];
+    const AUDIT_STATUS_VAL = ['0' => '待审核中', '1' => '审核通过', '2' => '审核驳回'];
 
     //账号类型
     const ACCOUNT_TYPE_TEL_PASSWORD = "tel_password";       //手机号加密码
@@ -148,6 +156,37 @@ class Utils
         return $response;
     }
 
+    /**
+     * 经纬度转GeoHash编码
+     *
+     * $lat  $lon经纬度参数
+     *
+     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
+     *
+     * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
+     */
+    public static function latAndLngCoding($lat, $lon, $key, $distance)
+    {
+        $geohash = new GeoHash();
+        $geo = $geohash->encode($lat, $lon);
+
+        if ($key == 1) {
+            //取出相邻八个区域
+            $geo = substr($geo, 0, $distance);
+            $neighbors = $geohash->neighbors($geo);
+            array_push($neighbors, $geo);
+            $values = [];
+            foreach ($neighbors as $key => $val) {
+                array_push($values, $val);
+//                $values .= '\'' . $val . '\'' .',';
+            }
+            $geo = $values;
+        }
+
+        return $geo;
+    }
+
+
     /*
      * 生成num位邀请码
      *
@@ -175,30 +214,6 @@ class Utils
             $f++
         ) ;
         return $d;
-    }
-
-
-    /**
-     * 获取随机字符串
-     * @param int $randLength 长度
-     * @param int $addtime 是否加入当前时间戳
-     * @param int $includenumber 是否包含数字
-     * @return string
-     */
-    public static function rand_str($randLength = 10, $includenumber = 1)
-    {
-        if ($includenumber) {
-            $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-        } else {
-            $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        }
-        $len = strlen($chars);
-        $randStr = '';
-        for ($i = 0; $i < $randLength; $i++) {
-            $randStr .= $chars[mt_rand(0, $len - 1)];
-        }
-
-        return $randStr;
     }
 
     /*
@@ -285,6 +300,70 @@ class Utils
         return $str;
     }
 
+    //缩放图片
+    /*
+     * im 需要缩放的图片 maxwith最大宽度 maxheight最大高度
+     *
+     *
+     */
+    public static function resizeImage($im, $maxwidth, $maxheight)
+    {
+        $pic_width = imagesx($im);
+        $pic_height = imagesy($im);
+
+        //进行优化，增加是否需要重新设计大小的标识
+        $resizewidth_tag = false;
+        $resizeheight_tag = false;
+
+        //缩放比例
+        $widthratio = 1;
+        $heightratio = 1;
+
+        //最终缩放比例
+        $ratio = 1;
+
+        if (($maxwidth && $pic_width > $maxwidth) || ($maxheight && $pic_height > $maxheight)) {
+            if ($maxwidth && $pic_width > $maxwidth) {
+                $widthratio = (double)($maxwidth / $pic_width);
+                $resizewidth_tag = true;
+            }
+            if ($maxheight && $pic_height > $maxheight) {
+                $heightratio = (double)($maxheight / $pic_height);
+                $resizeheight_tag = true;
+            }
+
+            if ($resizewidth_tag && $resizeheight_tag) {
+                if ($widthratio < $heightratio)
+                    $ratio = $widthratio;
+                else
+                    $ratio = $heightratio;
+            }
+
+            if ($resizewidth_tag && !$resizeheight_tag)
+                $ratio = $widthratio;
+            if ($resizeheight_tag && !$resizewidth_tag)
+                $ratio = $heightratio;
+
+            $newwidth = $pic_width * $ratio;
+            $newheight = $pic_height * $ratio;
+
+            self::processLog(__METHOD__, '', "widthratio："
+                . $widthratio . " resizewidth_tag：" . $resizewidth_tag . " heightratio:" . $heightratio . " resizeheight_tag:" . $resizeheight_tag
+                . " ratio" . $ratio . " newwidth:" . $newwidth . " newheight:" . $newheight);
+
+            if (function_exists("imagecopyresampled")) {
+                $newim = imagecreatetruecolor($newwidth, $newheight);
+                imagecopyresampled($newim, $im, 0, 0, 0, 0, $newwidth, $newheight, $pic_width, $pic_height);
+            } else {
+                $newim = imagecreate($newwidth, $newheight);
+                imagecopyresized($newim, $im, 0, 0, 0, 0, $newwidth, $newheight, $pic_width, $pic_height);
+            }
+            return $newim;
+        } else {
+            return $im;
+        }
+    }
+
     /*
      * 下载图片方法
      *
@@ -324,7 +403,6 @@ class Utils
 
 //        $filename=iconv("utf-8","gb2312",$filename);//中文转码
 
-        $filename = $filename;
         Utils::processLog(__METHOD__, '', " " . "  filename——2:" . $filename);
 
 
@@ -380,28 +458,6 @@ class Utils
         $b = $radLng1 - $radLng2;
         $s = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6378.137 * 1000;
         return $s;
-    }
-
-
-    /**
-     * 经纬度转GeoHash编码
-     *
-     * $lat  $lon经纬度参数
-     *
-     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
-     *
-     * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
-     */
-    public static function latAndLngCoding($lat, $lon, $key, $distance = null)
-    {
-        $geohash = new GeoHash();
-        $geo = $geohash->encode($lat, $lon);
-        Utils::processLog(__METHOD__, '', 'geo:' . json_encode($geo));
-        if (!Utils::isObjNull($distance)) {
-            $geo = substr($geo, 0, $distance);
-        }
-        Utils::processLog(__METHOD__, '', 'substr geo:' . json_encode($geo));
-        return $geo;
     }
 
     /*
@@ -560,6 +616,7 @@ class Utils
 
 
 
+
     //////////////////////////////////////////////////////////////////////////////////////////////////////////
     //LOG相关
 
@@ -589,7 +646,7 @@ class Utils
             $logData = json_encode($logData, true);
         }
         if ($logContent) {
-            Log::info('[Process]  ' . $LOGO_NO . '  ' . $logContent . '  ' . $logModular . '  ' . $logData);
+            Log::info('[Process]  ' . $LOGO_NO . '  ' . $logModular . '  ' . $logContent . '  ' . $logData);
         } else {
             Log::info('[Process]  ' . $LOGO_NO . '  ' . $logModular . '  ' . $logData);
         }
@@ -663,6 +720,26 @@ class Utils
         } else {
             Log::info('[' . $label . ']  ' . $LOGO_NO . '  ' . $logData);
         }
+        Session::remove("LOGO_NO");
+    }
+
+    /**
+     * 返回接口LOG
+     * @param string $logModular 模块
+     * @param array $logData 数据
+     */
+    public static function responseLog($logModular = "", $logData = [])
+    {
+        $LOGO_NO = Session::get("LOGO_NO");
+        $log = array(
+            'code' => $logData['code'],
+            'result' => $logData['result'],
+            'message' => $logData['message'],
+        );
+        if (array_key_exists('ret', $logData)) {
+            $log['ret'] = $logData['ret'];
+        }
+        Log::info('[RESPONSE]  ' . $LOGO_NO . '  ' . $logModular . '  ' . json_encode($log, true));
         Session::remove("LOGO_NO");
     }
 

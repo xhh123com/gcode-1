@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manager.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,49 +16,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="129" column="69" selection-start-line="39" selection-start-column="4" selection-end-line="129" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CityManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="alertChartset.text" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="73" column="54" selection-start-line="7" selection-start-column="3" selection-end-line="73" selection-end-column="54" />
+            <state relative-caret-position="1121">
+              <caret line="59" selection-start-line="59" selection-end-line="60" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopClerkManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/ShopClerkManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4921">
+              <caret line="265" selection-start-line="265" selection-end-line="265" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/OrderManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2337">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/UserManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4750">
+              <caret line="256" column="8" selection-start-line="256" selection-start-column="8" selection-end-line="256" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserShopClerkApplyManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/UserShopClerkApplyManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3933">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
             </state>
           </provider>
         </entry>
@@ -68,26 +64,26 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="59" selection-start-line="59" selection-end-line="63" selection-end-column="91" />
+            <state relative-caret-position="3914">
+              <caret line="206" selection-start-line="206" selection-end-line="210" selection-end-column="133" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CouponManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CouponManager.php">
+      <file leaf-file-name="XcxFormIdManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/XcxFormIdManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="294" column="5" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="294" selection-end-column="5" />
+            <state relative-caret-position="4389">
+              <caret line="237" column="22" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/manager.blade.php">
+      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
+            <state relative-caret-position="317">
+              <caret line="450" column="25" lean-forward="true" selection-start-line="450" selection-start-column="25" selection-end-line="450" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -95,17 +91,17 @@
       <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="121" selection-start-line="121" selection-end-line="123" selection-end-column="20" />
+            <state relative-caret-position="2128">
+              <caret line="112" column="80" selection-start-line="112" selection-start-column="80" selection-end-line="112" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/mhl/style.css">
+      <file leaf-file-name="ApiResponse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/Common/ApiResponse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5852">
-              <caret line="308" column="1" selection-start-line="308" selection-start-column="1" selection-end-line="308" selection-end-column="1" />
+            <state relative-caret-position="2242">
+              <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -114,11 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;/html&gt;</find>
-      <find>&lt;html&gt;</find>
-      <find>Tables_in_zygwdb</find>
-      <find>GoodsLevel1Type</find>
-      <find>2018-4-9</find>
       <find>$mode_name</find>
       <find>$route_param_arr</find>
       <find>createw</find>
@@ -134,7 +125,6 @@
       <find>Tables_in_qyxdb</find>
       <find>ids</find>
       <find>table</find>
-      <find>user</find>
       <find>Utils</find>
       <find>comp</find>
       <find>var_name</find>
@@ -142,6 +132,14 @@
       <find>shopSto</find>
       <find>city</find>
       <find>cou</find>
+      <find>date</find>
+      <find>userCou</find>
+      <find>user</find>
+      <find>userS</find>
+      <find>audit_shop</find>
+      <find>errorMassage</find>
+      <find>score</find>
+      <find>vericodeVerifyRecord</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -157,12 +155,14 @@
       <replace>$route_param_items</replace>
       <replace>Tables_in_wlds_testdb</replace>
       <replace>qyxdb</replace>
+      <replace>errorMessage</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\gcode\storage\app\Models</dir>
       <dir>D:\xampp\htdocs\gcode\storage\app\Code\Models</dir>
       <dir>D:\xampp\htdocs\gcode\storage\app\Code</dir>
       <dir>D:\xampp\htdocs\gcode\storage\app</dir>
+      <dir>D:\xampp\htdocs\gcode\app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -194,15 +194,17 @@
         <option value="$PROJECT_DIR$/resources/views/DB/controller.blade.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Route/web.php" />
         <option value="$PROJECT_DIR$/resources/views/api/controller.blade.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/controller.blade.php" />
         <option value="$USER_HOME$/Desktop/微信订单对账文件/WXImport.php" />
         <option value="$USER_HOME$/Desktop/微信订单对账文件/ExcelController.php" />
-        <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/manager.blade.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
+        <option value="$PROJECT_DIR$/storage/app/Code/Components/CouponManager.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/controller.blade.php" />
+        <option value="$PROJECT_DIR$/app/Components/Common/ApiResponse.php" />
+        <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
       </list>
     </option>
   </component>
@@ -305,9 +307,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
-    <option name="width" value="1350" />
-    <option name="height" value="1038" />
+    <option name="x" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -341,6 +343,19 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+              <item name="Commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -537,15 +552,20 @@
       <workItem from="1559548976729" duration="292000" />
       <workItem from="1559549312451" duration="15000" />
       <workItem from="1559640966789" duration="2215000" />
-      <workItem from="1559696635663" duration="5115000" />
+      <workItem from="1559696635663" duration="8558000" />
+      <workItem from="1559868014095" duration="5038000" />
+      <workItem from="1560074196442" duration="6741000" />
+      <workItem from="1560337114607" duration="695000" />
+      <workItem from="1560517899633" duration="465000" />
+      <workItem from="1560598987636" duration="1195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103736000" />
+    <option name="totallyTimeSpent" value="121313000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -555,7 +575,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25475842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2510981" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -589,12 +609,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Api/ApplyAgentController.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Admin/CommentController.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Admin/ChannelSaleRefController.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/apiController.blade.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/ShopClerkManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CollectManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Api/GoodsController.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/DistributionRuleManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/GoodsManager.php" />
@@ -602,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1235">
           <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/OrderManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6555">
-          <caret line="359" column="13" selection-start-line="345" selection-start-column="8" selection-end-line="359" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -657,13 +664,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Api/ChannelSaleRefController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4560">
-          <caret line="245" column="34" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/api/api_route.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -718,30 +718,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/微信订单对账文件/WXImport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/微信订单对账文件/ExcelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-          <folding>
-            <element signature="e#144#173#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12122">
-          <caret line="645" column="70" selection-start-line="645" selection-start-column="70" selection-end-line="645" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/微信订单对账文件/WXImport.php" />
+    <entry file="file://$USER_HOME$/Desktop/微信订单对账文件/ExcelController.php" />
     <entry file="file://$PROJECT_DIR$/public/js/dist/pages/dashboard.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -785,52 +763,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="73" column="54" selection-start-line="7" selection-start-column="3" selection-end-line="73" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="129" column="69" selection-start-line="39" selection-start-column="4" selection-end-line="129" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CityManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="1463">
           <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="59" selection-start-line="59" selection-end-line="63" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CouponManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="294" column="5" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="294" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="121" selection-start-line="121" selection-end-line="123" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="3078">
           <caret line="162" column="49" selection-start-line="162" selection-start-column="49" selection-end-line="162" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3591">
+          <caret line="194" column="34" selection-start-line="194" selection-start-column="34" selection-end-line="194" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/BankManager.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/CouponManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6023">
+          <caret line="323" column="28" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2109">
+          <caret line="111" selection-start-line="111" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="112" column="80" selection-start-line="112" selection-start-column="80" selection-end-line="112" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/UserShopClerkApplyManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Common/ApiResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/ShopClerkManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4921">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/OrderManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2337">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4750">
+          <caret line="256" column="8" selection-start-line="256" selection-start-column="8" selection-end-line="256" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" selection-start-line="59" selection-end-line="60" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3914">
+          <caret line="206" selection-start-line="206" selection-end-line="210" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/XcxFormIdManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4389">
+          <caret line="237" column="22" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="450" column="25" lean-forward="true" selection-start-line="450" selection-start-column="25" selection-end-line="450" selection-end-column="25" />
         </state>
       </provider>
     </entry>
