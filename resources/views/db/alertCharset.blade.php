@@ -12,7 +12,7 @@
 @endforeach
 
 @foreach($table_names as $table_name)
-    ALTER TABLE `{{$table_name}}` AUTO_INCREMENT=100000000;
+    ALTER TABLE `{{$table_name}}` AUTO_INCREMENT=100000010;
 @endforeach
 
 </html>
