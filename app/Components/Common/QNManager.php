@@ -9,6 +9,7 @@
 
 namespace App\Components\Common;
 
+use App\Components\Project;
 use Qiniu\Auth;
 use Illuminate\Support\Facades\Storage;
 

@@ -39,6 +39,12 @@ class ApiResponse
     const CHANGE_PAWWORD_FAILED = 114;
     const VERTIFY_INVALID = 115;
 
+    const NEED_PHONENUM_PASSWORD_CAPTCHA_CODE = 121;
+    const CAPTCHA_CODE_ERROR = 122;
+    const ACCOUNT_INVALID = 123;
+    const PHONENUM_ERROR = 124;
+    const PASSWORD_ERROR = 125;
+
     // 下单操作相关
     const UITIFY_ORDER_FAILED = 300;
     const COUPON_IS_INVAILD = 301;
@@ -60,9 +66,20 @@ class ApiResponse
     const NO_TNANK = 502;
     const ALREDAY_THANK = 503;
 
+    //暂无开通城市
+    const NO_CITY = 601;
+
+    //手机号已经绑定人员且生效
+    const PHONENUM_ALREAD_BAND_SHOP_CLERK = 701;
+    const USER_ALREADY_APPLY_SHOP_CLERK = 702;
+
+    //员工相关
+    const WORKER_NOT_FOUND = 801;
+    const NOT_WORKER = 802;
+
     /* 映射错误信息 */
     public static $errorMessage = [
-        self::SUCCESS_CODE => '成功',
+        self::SUCCESS_CODE => '操作成功',
 
         self::UNKNOW_ERROR => '未知错误',
         self::MISSING_PARAM => '缺少参数',
@@ -84,6 +101,12 @@ class ApiResponse
         self::CHANGE_PAWWORD_FAILED => '修改密码失败',
         self::VERTIFY_INVALID => '验证码失效',
 
+        self::NEED_PHONENUM_PASSWORD_CAPTCHA_CODE => '请输入手机号、密码、验证码',
+        self::CAPTCHA_CODE_ERROR => '验证码错误',
+        self::ACCOUNT_INVALID => '账号已经禁用',
+        self::PHONENUM_ERROR => '手机号错误',
+        self::PASSWORD_ERROR => '密码错误',
+
         self::UITIFY_ORDER_FAILED => '统一下单失败',
         self::COUPON_IS_INVAILD => '优惠券无效',
         self::COUPON_IS_OUT_DATE => '优惠券使用期限未开始或已结束',
@@ -101,6 +124,14 @@ class ApiResponse
         self::ALREDAY_LIKE => '已经点过赞',
         self::NO_TNANK => '还没感过谢',
         self::ALREDAY_THANK => '已经感过谢',
+
+        self::NO_CITY => '暂无开通城市',
+
+        self::PHONENUM_ALREAD_BAND_SHOP_CLERK => '手机号已绑定生效人员',
+        self::USER_ALREADY_APPLY_SHOP_CLERK => '该用户已经申请人员',
+
+        self::WORKER_NOT_FOUND => '未找到职员信息',
+        self::NOT_WORKER => '该用户不是职员',
 
     ];
 
