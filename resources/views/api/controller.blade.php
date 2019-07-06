@@ -60,7 +60,7 @@ class {{$model_name}}Controller
     {
         $data = $request->all();
         $status = '1';
-        $level='';
+        $level='Y';
         //配置获取信息级别
         if (array_key_exists('level', $data) && !Utils::isObjNull($data['level'])) {
             $level = $data['level'];
