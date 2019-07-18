@@ -31,6 +31,19 @@ class {{$manager_name}}
     }
 
     /*
+    * getById
+    *
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
+    */
+    public static function getByIdWithTrashed($id)
+    {
+        $info = {{$model_name}}::withTrashed()->where('id', $id)->first();
+        return $info;
+    }
+
+    /*
      * getInfoByLevel
      *
     * By Auto CodeCreator
