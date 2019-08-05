@@ -115,6 +115,26 @@ class {{$model_name}}Controller
         return ApiResponse::makeResponse(true, ${{$var_name}}, ApiResponse::SUCCESS_CODE);
     }
 
+    /*
+    * 删除
+    *
+    * By Auto CodeCreator
+    *
+    * 2019-05-18 17:14:16
+    */
+    public function deleteById(Request $request, $id)
+    {
+        $data = $request->all();
+        if (is_numeric($id) !== true) {
+        return ApiResponse::makeResponse(false, "合规校验失败，请检查参数", ApiResponse::INNER_ERROR);
+        }
+        ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
+        if (${{$var_name}}) {
+            {{$model_name}}Manager::deleteById(${{$var_name}}->id);
+        }
+        return ApiResponse::makeResponse(true, "删除成功", ApiResponse::SUCCESS_CODE);
+    }
+
 
     /*
     * 查看信息

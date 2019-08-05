@@ -44,6 +44,21 @@ class {{$manager_name}}
     }
 
     /*
+    * deleteById
+    *
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
+    */
+    public static function deleteById($id)
+    {
+        $info = self::getById($id);
+        $result = $info->delete();
+        return $result;
+    }
+
+
+    /*
      * getInfoByLevel
      *
     * By Auto CodeCreator

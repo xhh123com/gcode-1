@@ -12,7 +12,12 @@
 @endforeach
 
 @foreach($table_names as $table_name)
-    ALTER TABLE `{{$table_name}}` AUTO_INCREMENT=100000010;
+    ALTER TABLE `{{$table_name}}` AUTO_INCREMENT=11000;
+@endforeach
+
+@foreach($table_names as $table_name)
+    ALTER TABLE `{{$table_name}}` ADD INDEX idx_seq (seq);
+    ALTER TABLE `{{$table_name}}` ADD INDEX idx_status (status);
 @endforeach
 
 </html>
