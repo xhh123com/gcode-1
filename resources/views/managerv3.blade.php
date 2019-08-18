@@ -14,6 +14,7 @@ namespace App\Components;
 use App\Components\Common\Utils;
 use App\Models\{{$model_name}};
 
+//V3版本的manager层，在V2版本的基础上，进一步结合redis
 class {{$manager_name}}
 {
 
@@ -65,9 +66,14 @@ class {{$manager_name}}
     *
     * {{$date_time}}
     */
-    public static function save($info)
+    public static function save($info,$refresh_redis=0)
     {
         $result = $info->save();
+
+        //进行redis的刷新
+        if($refresh_redis==1){
+
+        }
         return $result;
     }
 
@@ -82,18 +88,20 @@ class {{$manager_name}}
      */
     public static function getInfoByLevel($info, $level)
     {
+        $level_arr = explode(',', $level);
+
         $info->status_str = Utils::COMMON_STATUS_VAL[$info->status];
 
         //0:
-        if (strpos($level, '0') !== false) {
+        if (in_array('0', $level_arr)) {
 
         }
         //1:
-        if (strpos($level, '1') !== false) {
+        if (in_array('1', $level_arr)) {
 
         }
         //2:
-        if (strpos($level, '2') !== false) {
+        if (in_array('2', $level_arr)) {
 
         }
 
@@ -175,8 +183,19 @@ class {{$manager_name}}
     *
     * {{$date_time}}
      */
-    public static function setInfo($info, $data)
+    public static function setInfo($info, $data,$level=0)
     {
+        //0级信息配置
+        if( $level >= 0){
+        }
+
+        //1级信息配置
+        if( $level >= 1){
+        }
+
+        //2级信息配置
+        if( $level >= 2){
+        }
 
         @foreach($columns as $column)
 

@@ -68,6 +68,7 @@ class CreateFiles extends Command
             $manager_name = self::getManagerName($model_name);      //manager名
             self::createManager($model_name, $table_name, $manager_name);     //建设Manager
             self::createManagerV2($model_name, $table_name, $manager_name); //建设V2版本的Manager
+            self::createManagerV3($model_name, $table_name, $manager_name); //建设V3版本的Manager
 
             $var_name = self::getVarNameByTableName($table_name);
             $router_blade_var_name = self::getVarName($model_name);
@@ -224,6 +225,29 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/ComponentsV2/' . $manager_name . ".php", $file_string);
+    }
+
+
+
+    //生成ManagerV3文件
+    private function createManagerV3($model_name, $table_name, $manager_name)
+    {
+        $columns = Schema::getColumnListing($table_name);
+        echo "\ncolumns:\n" . json_encode($columns) . "\n";
+
+        $param = [
+            'model_name' => $model_name,
+            'table_name' => $table_name,
+            'manager_name' => $manager_name,
+            'columns' => $columns,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('managerv3', $param)->__toString();
+        echo "\nmodel code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/ComponentsV3/' . $manager_name . ".php", $file_string);
     }
 
 

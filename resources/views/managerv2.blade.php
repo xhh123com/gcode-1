@@ -32,7 +32,7 @@ class {{$manager_name}}
     }
 
     /*
-    * getById
+    * getByIdWithTrashed
     *
     * By Auto CodeCreator
     *
@@ -55,6 +55,20 @@ class {{$manager_name}}
     {
         $info = self::getById($id);
         $result = $info->delete();
+        return $result;
+    }
+
+
+    /*
+    * save
+    *
+    * By Auto CodeCreator
+    *
+    * {{$date_time}}
+    */
+    public static function save($info)
+    {
+        $result = $info->save();
         return $result;
     }
 
