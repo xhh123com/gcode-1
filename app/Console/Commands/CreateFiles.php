@@ -63,16 +63,17 @@ class CreateFiles extends Command
             array_push($table_names, $table_name);
 
             $model_name = self::getModelName($table_name);      //model名
-            self::createModel($model_name, $table_name);            //建设model
-
-            $manager_name = self::getManagerName($model_name);      //manager名
-            self::createManager($model_name, $table_name, $manager_name);     //建设Manager
-            self::createManagerV2($model_name, $table_name, $manager_name); //建设V2版本的Manager
-            self::createManagerV3($model_name, $table_name, $manager_name); //建设V3版本的Manager
-
             $var_name = self::getVarNameByTableName($table_name);
             $router_blade_var_name = self::getVarName($model_name);
             $controller_name = self::getControllerName($model_name);
+            $manager_name = self::getManagerName($model_name);      //manager名
+
+            self::createModel($model_name, $table_name);            //建设model
+
+            self::createManager($model_name, $table_name, $manager_name);     //建设Manager
+            self::createManagerV2($model_name, $table_name, $manager_name); //建设V2版本的Manager
+            self::createManagerV3($model_name, $table_name, $manager_name, $var_name); //建设V3版本的Manager
+
             //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
             //生成APIController
@@ -228,14 +229,14 @@ class CreateFiles extends Command
     }
 
 
-
     //生成ManagerV3文件
-    private function createManagerV3($model_name, $table_name, $manager_name)
+    private function createManagerV3($model_name, $table_name, $manager_name, $var_name)
     {
         $columns = Schema::getColumnListing($table_name);
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
 
         $param = [
+            'var_name' => $var_name,
             'model_name' => $model_name,
             'table_name' => $table_name,
             'manager_name' => $manager_name,

@@ -13,6 +13,7 @@ namespace App\Components;
 
 use App\Components\Common\Utils;
 use App\Models\{{$model_name}};
+use App\Components\Redis\RedisManager;
 
 //V3版本的manager层，在V2版本的基础上，进一步结合redis
 class {{$manager_name}}
@@ -72,7 +73,7 @@ class {{$manager_name}}
 
         //进行redis的刷新
         if($refresh_redis==1){
-
+            RedisManager::del("{{$var_name}}:" . $info->id);
         }
         return $result;
     }
