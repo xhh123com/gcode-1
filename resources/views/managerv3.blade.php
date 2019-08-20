@@ -56,6 +56,7 @@ class {{$manager_name}}
     {
         $info = self::getById($id);
         $result = $info->delete();
+        RedisManager::del("{{$var_name}}:" . $info->id);
         return $result;
     }
 
