@@ -91,7 +91,7 @@ class {{$model_name}}Controller
         }
         $data['admin_id'] = $admin['id'];
         ${{$var_name}} = {{$model_name}}Manager::setInfo(${{$var_name}}, $data);
-        ${{$var_name}}->save();
+        {{$model_name}}Manager::save(${{$var_name}});
         return ApiResponse::makeResponse(true, ${{$var_name}}, ApiResponse::SUCCESS_CODE);
     }
 
@@ -111,7 +111,7 @@ class {{$model_name}}Controller
         }
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
         ${{$var_name}} = {{$model_name}}Manager::setInfo(${{$var_name}}, $data);
-        ${{$var_name}}->save();
+        {{$model_name}}Manager::save(${{$var_name}});
         return ApiResponse::makeResponse(true, ${{$var_name}}, ApiResponse::SUCCESS_CODE);
     }
 
