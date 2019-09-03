@@ -232,7 +232,7 @@ class {{$manager_name}}
                 $info->send_num = $info->send_num + $num;
                 break;
         }
-        $info->save();
+        $info = self::save($info);
         return $info;
     }
 

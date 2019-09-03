@@ -164,28 +164,17 @@ class Utils
      *
      * $lat  $lon经纬度参数
      *
-     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
-     *
      * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
      */
-    public static function latAndLngCoding($lat, $lon, $key, $distance)
+    public static function getGeoHash($lat, $lon, $distance = null)
     {
         $geohash = new GeoHash();
         $geo = $geohash->encode($lat, $lon);
-
-        if ($key == 1) {
-            //取出相邻八个区域
+        Utils::processLog(__METHOD__, '', 'geo:' . json_encode($geo));
+        if (!Utils::isObjNull($distance)) {
             $geo = substr($geo, 0, $distance);
-            $neighbors = $geohash->neighbors($geo);
-            array_push($neighbors, $geo);
-            $values = [];
-            foreach ($neighbors as $key => $val) {
-                array_push($values, $val);
-//                $values .= '\'' . $val . '\'' .',';
-            }
-            $geo = $values;
         }
-
+        Utils::processLog(__METHOD__, '', 'substr geo:' . json_encode($geo));
         return $geo;
     }
 
