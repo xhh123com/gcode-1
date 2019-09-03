@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Components/Redis/RedisManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Components/Common/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/Common/Utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/managerv3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/managerv3.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/printTDA.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/printTDA.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,8 +78,8 @@
       <file leaf-file-name="printTDA.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/printTDA.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="212">
+              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -496,12 +493,12 @@
       <workItem from="1567055867501" duration="294000" />
       <workItem from="1567056354704" duration="5127000" />
       <workItem from="1567296069437" duration="7239000" />
-      <workItem from="1567430130728" duration="2688000" />
+      <workItem from="1567430130728" duration="2830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307249000" />
+    <option name="totallyTimeSpent" value="307391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -790,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/printTDA.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        <state relative-caret-position="212">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
         </state>
       </provider>
     </entry>

@@ -37,8 +37,7 @@ class printTDA extends Command
      */
     public function handle()
     {
-        //
-        //初始化测试，正式使用方法需要删除
+        //初始化二位数组
         $two_dimensional_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
         self::recursiveTwoDimensionalArray($two_dimensional_array);
