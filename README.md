@@ -4,6 +4,12 @@ gcode目前是用于快速生成标准化文件的工具，目前支持Models和
 
 后续还将自动生成Controller、路由等
 
+在2019年9月6日增加了自动创建测试数据的功能，即建立好user和user_login表后，通过artisan命令，即可创建用户信息
+
+```
+php artisan auto:createUsers
+```
+
 # 使用方法
 
 1、下载gcode，并且配置.env文件，其中配置数据库连接信息即可，希望生成哪个数据库的Models和Components，即配置哪个数据库
@@ -61,10 +67,21 @@ model code string:
 @欢迎团队小伙伴协助进行项目优化，或者在使用中感觉需要哪些公共的类要生成，也可以补充或者新建命令
 
 
-# 2019年5月6日进行优化
-默认建立数据库时utf8字符集的，在处理用户昵称时，如果有emoj符号就会报错，因此需要手动连接数据库，执行修改字符集的命令。进行gcode的优化，在DB文件夹下，生成alertCharset.txt文件，其中的代码是修改数据库字符集的代码，应该执行。
-默认生成自增主键的处理，可以一起运行
+#2019年9月6日
+在Command中增加了auto:createUsers命令，确保数据库有user表和user_login，则需要自动建设用户信息
+
+```
+php artisan auto:createUsers
+```
+
 
 # 2019年5月22日进行优化
 在Components下面的Common文件夹，为需要使用的PHP类库
 在public下的css,js,dist文件夹，为需要同步的类库
+
+# 2019年5月6日进行优化
+默认建立数据库时utf8字符集的，在处理用户昵称时，如果有emoj符号就会报错，因此需要手动连接数据库，执行修改字符集的命令。进行gcode的优化，在DB文件夹下，生成alertCharset.txt文件，其中的代码是修改数据库字符集的代码，应该执行。
+默认生成自增主键的处理，可以一起运行
+
+
+
