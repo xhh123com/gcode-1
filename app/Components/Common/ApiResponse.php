@@ -45,37 +45,6 @@ class ApiResponse
     const PHONENUM_ERROR = 124;
     const PASSWORD_ERROR = 125;
 
-    // 下单操作相关
-    const UITIFY_ORDER_FAILED = 300;
-    const COUPON_IS_INVAILD = 301;
-    const COUPON_IS_OUT_DATE = 302;
-    const COUPON_IS_USED = 303;
-    const COUPON_IS_NOT_CONDITION = 304;
-
-    // 信息操作相关
-    const FIND_ERROR = 400;
-    const ADD_ERROR = 401;
-    const EDIT_ERROR = 402;
-    const DELETE_ERROR = 403;
-    const SAVE_ERROR = 404;
-    const DELETE_SUCCESS = 405;
-
-    // 点赞感谢相关
-    const NO_LIKE = 500;
-    const ALREDAY_LIKE = 501;
-    const NO_TNANK = 502;
-    const ALREDAY_THANK = 503;
-
-    //暂无开通城市
-    const NO_CITY = 601;
-
-    //手机号已经绑定人员且生效
-    const PHONENUM_ALREAD_BAND_SHOP_CLERK = 701;
-    const USER_ALREADY_APPLY_SHOP_CLERK = 702;
-
-    //员工相关
-    const WORKER_NOT_FOUND = 801;
-    const NOT_WORKER = 802;
 
     /* 映射错误信息 */
     public static $errorMessage = [
@@ -106,33 +75,6 @@ class ApiResponse
         self::ACCOUNT_INVALID => '账号已经禁用',
         self::PHONENUM_ERROR => '手机号错误',
         self::PASSWORD_ERROR => '密码错误',
-
-        self::UITIFY_ORDER_FAILED => '统一下单失败',
-        self::COUPON_IS_INVAILD => '优惠券无效',
-        self::COUPON_IS_OUT_DATE => '优惠券使用期限未开始或已结束',
-        self::COUPON_IS_USED => '优惠券已使用',
-        self::COUPON_IS_NOT_CONDITION => '优惠券不满足使用条件',
-
-        self::FIND_ERROR => '没有找到相关信息',
-        self::ADD_ERROR => '添加失败',
-        self::EDIT_ERROR => '编辑失败',
-        self::DELETE_ERROR => '删除失败',
-        self::SAVE_ERROR => '保存失败',
-        self::DELETE_SUCCESS => '删除成功',
-
-        self::NO_LIKE => '还没点过赞',
-        self::ALREDAY_LIKE => '已经点过赞',
-        self::NO_TNANK => '还没感过谢',
-        self::ALREDAY_THANK => '已经感过谢',
-
-        self::NO_CITY => '暂无开通城市',
-
-        self::PHONENUM_ALREAD_BAND_SHOP_CLERK => '手机号已绑定生效人员',
-        self::USER_ALREADY_APPLY_SHOP_CLERK => '该用户已经申请人员',
-
-        self::WORKER_NOT_FOUND => '未找到职员信息',
-        self::NOT_WORKER => '该用户不是职员',
-
     ];
 
     /* 映射错误信息 */
