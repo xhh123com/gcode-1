@@ -114,15 +114,20 @@ class Utils
      * @param int $https https协议
      * @return bool|mixed
      */
-    public static function curl($url, $params = false, $ispost = 0, $https = 0)
+    public static function curl($url, $params = false, $ispost = 0, $https = 0, $header = null)
     {
         Utils::processLog(__METHOD__, '', " " . "url:" . $url);
         $httpInfo = array();
         $ch = curl_init();
-//        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-//                'Content-Type: application/json; charset=utf-8'
-//            )
-//        );
+
+        //2019-10-07进行优化，可以设置header信息
+        if ($header == null) {
+            $header = array(
+                'Content-Type: application/json; charset=utf-8'
+            );
+        }
+
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
         curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36');
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
@@ -133,8 +138,9 @@ class Utils
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE); // 从证书中检查SSL加密算法是否存在
         }
         if ($ispost) {
+            Utils::processLog(__METHOD__, "", "POST请求的params：" . json_encode($params));
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
             curl_setopt($ch, CURLOPT_URL, $url);
         } else {
             if ($params) {
@@ -158,6 +164,7 @@ class Utils
         curl_close($ch);
         return $response;
     }
+
 
     /**
      * 经纬度转GeoHash编码
@@ -526,7 +533,7 @@ class Utils
      * @str：需要截取的字符串 start：开始位置 length：长度 chartset：字符集 suffix 结束符
      */
 
-    public static function substr_text($str, $start = 0, $length, $charset = "utf-8", $suffix = "")
+    public static function substrText($str, $start = 0, $length, $charset = "utf-8", $suffix = "")
     {
         if (function_exists("mb_substr")) {
             return mb_substr($str, $start, $length, $charset) . $suffix;
@@ -621,6 +628,20 @@ class Utils
             $en_week_num = 7;
         }
         return $en_week_num;
+    }
+
+
+    /*
+     * 手机号脱敏隐藏中间4位
+     *
+     * By TerryQi
+     *
+     * 2019-09-16
+     */
+    public static function hidePhonenum($phonenum)
+    {
+        $resstr = substr_replace($phonenum, '****', 3, 4);
+        return $resstr;
     }
 
 

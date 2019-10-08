@@ -53,4 +53,23 @@ class QNManager
         }
     }
 
+    /*
+     * 获取音频文件的时长
+     *
+     * By TerryQi
+     *
+     * 2019-10-06
+     *
+     * param:audio_url音频路径
+     *
+     * return：返回数组
+     */
+    public static function getAudioInfo($audio_url)
+    {
+        $audio_info_url = $audio_url . "?avinfo";
+        $info = Utils::curl($audio_info_url, [], 0, 0);
+        Utils::processLog(__METHOD__, "", "info:" . json_encode($info));
+        return json_decode($info, true);
+    }
+
 }

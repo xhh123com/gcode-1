@@ -153,6 +153,10 @@ class {{$manager_name}}
             if (array_key_exists('status', $orderby_arr) && !Utils::isObjNull($orderby_arr['status'])) {
                 $infos = $infos->orderby('status', $orderby_arr['status']);
             }
+            //如果传入random，代表要随机获取
+            if (array_key_exists('random', $orderby_arr) && !Utils::isObjNull($orderby_arr['random'])) {
+                $infos = $infos->inRandomOrder();
+            }
         }
         $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
 
