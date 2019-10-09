@@ -114,6 +114,10 @@ class {{$manager_name}}
         //Y:        压缩，去掉content_html等大报文信息
         if (strpos($level, 'Y') !== false) {
             unset($info->content_html);
+            unset($info->seq);
+            unset($info->status);
+            unset($info->updated_at);
+            unset($info->deleted_at);
         }
         //Z:        预留
         if (strpos($level, 'Z') !== false) {
@@ -177,6 +181,11 @@ class {{$manager_name}}
             $infos = $infos->paginate($page_size);
         }
         else {
+            //如果con_arr中有page_size信息 2019-10-08优化，可以不分页也获取多条数据
+            if (array_key_exists('page_size', $con_arr) && !Utils::isObjNull($con_arr['page_size'])) {
+                $page_size = $con_arr['page_size'];
+                $infos = $infos->take($page_size);
+            }
             $infos = $infos->get();
         }
         return $infos;
