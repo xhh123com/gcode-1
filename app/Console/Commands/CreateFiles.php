@@ -81,6 +81,9 @@ class CreateFiles extends Command
             //生成APIController
             self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
 
+            //生成AdminApiController
+            self::createAdminAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
+
             //向路由数组中推入数据
             $item = [
                 'var_name' => $router_blade_var_name,
@@ -94,6 +97,9 @@ class CreateFiles extends Command
 
         //生成api路由
         self::createAPIRoute($route_param_items);
+
+        //生成admin api路由
+        self::createAdminAPIRoute($route_param_items);
 
         //生成修改字符集的信息
         self::createAlertDB($table_names);
@@ -325,6 +331,27 @@ class CreateFiles extends Command
         Storage::disk('local')->put('/Code/Api/Stable/' . $controller_name . ".php", $file_string);
     }
 
+
+    //生成AdminAPI的controller文件
+    private function createAdminAPIController($model_name, $var_name, $controller_name, $router_blade_var_name)
+    {
+        $param = [
+            'model_name' => $model_name,
+            'var_name' => $var_name,
+            'controller_name' => $controller_name,
+            'router_blade_var_name' => $router_blade_var_name,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('adminApi.controller', $param)->__toString();
+
+        echo "\napi.controller code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/AdminApi/Stable/' . $controller_name . ".php", $file_string);
+    }
+
+
     //生成API route文件
     private function createAPIRoute($route_param_items)
     {
@@ -337,6 +364,21 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Route/api.php', $file_string);
+    }
+
+
+    //生成AdminAPI route文件
+    private function createAdminAPIRoute($route_param_items)
+    {
+        $param = [
+            'route_param_items' => $route_param_items
+        ];
+        $file_string = view('adminApi.api_route', $param)->__toString();
+
+        echo "\napi route string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Route/admin_api.php', $file_string);
     }
 
 
