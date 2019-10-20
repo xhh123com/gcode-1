@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/adminApi/controller.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Components/Common/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/Common/Utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,24 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-760">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceLogController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/DeviceLogController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="api_route.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,38 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamOrderController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/ExamOrderController.php">
+      <file leaf-file-name="alertCharset.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/db/alertCharset.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="247">
+              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/api/controller.blade.php">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndicatorController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/IndicatorController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1599">
-              <caret line="147" column="34" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateFiles.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="53" column="44" selection-end-line="409" />
+            <state relative-caret-position="380">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -85,10 +48,42 @@
       <file leaf-file-name="admin_api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/admin_api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="154" column="68" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="154" selection-end-column="68" />
+            <state relative-caret-position="181">
+              <caret line="52" selection-start-line="52" selection-end-line="56" selection-end-column="84" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="66" selection-start-line="66" selection-end-line="72" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alertChartset.text" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="155" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="207" column="6" lean-forward="true" selection-start-line="207" selection-start-column="6" selection-end-line="207" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_route.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/api/api_route.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="false">
@@ -100,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerv3.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="988">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -113,11 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>phonenu</find>
-      <find>phon</find>
-      <find>phonenum</find>
-      <find>consu</find>
       <find>substrText</find>
       <find>addres</find>
       <find>ip</find>
@@ -143,6 +133,11 @@
       <find>PartnerCompany</find>
       <find>$self_admin_id</find>
       <find>createAdminAPIRoute</find>
+      <find>hash</find>
+      <find>productSub</find>
+      <find>teacher_f</find>
+      <find>deviceSet</find>
+      <find>device</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -197,7 +192,6 @@
         <option value="$PROJECT_DIR$/resources/views/api/controller.blade.php" />
         <option value="$PROJECT_DIR$/app/Components/DateTool.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Route/api.php" />
-        <option value="$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/IndexRecommendManager.php" />
         <option value="$PROJECT_DIR$/resources/views/manager_v2.blade.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/UserManager.php" />
@@ -217,17 +211,18 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/Stable/UserCartManager.php" />
         <option value="$PROJECT_DIR$/app/Components/Project.php" />
         <option value="$PROJECT_DIR$/app/Components/Common/UserInfoGenerator.php" />
-        <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
-        <option value="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/Stable/GiftOrderManager.php" />
         <option value="$PROJECT_DIR$/resources/views/manager.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/managerv2.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/managerv3.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/controller.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
+        <option value="$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" />
+        <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
       </list>
     </option>
   </component>
@@ -422,6 +417,14 @@
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="errors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="adminApi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -430,6 +433,13 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -448,6 +458,23 @@
               <item name="storage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Stable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -480,6 +507,57 @@
               <item name="storage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Stable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Stable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Stable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="Route" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -496,19 +574,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\gcode\resources\views\adminApi" />
-      <recent name="D:\xampp\htdocs\gcode\app\Components\Common" />
-      <recent name="D:\xampp\htdocs\gcode\app\Components" />
-      <recent name="D:\xampp\htdocs\gcode\app\Console\Commands" />
-      <recent name="D:\xampp\htdocs\gcode\app\Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\gcode\app\Components" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\admin" />
       <recent name="D:\xampp\htdocs\gcode\resources\views" />
       <recent name="D:\xampp\htdocs\gcode\storage\app\Code\Components" />
       <recent name="D:\xampp\htdocs\gcode\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\gcode\app\Components\Common" />
+      <recent name="D:\xampp\htdocs\gcode\resources\views\adminApi" />
+      <recent name="D:\xampp\htdocs\gcode\app\Components" />
+      <recent name="D:\xampp\htdocs\gcode\app\Console\Commands" />
+      <recent name="D:\xampp\htdocs\gcode\app\Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -636,12 +714,15 @@
       <workItem from="1570324062729" duration="579000" />
       <workItem from="1570325969454" duration="14499000" />
       <workItem from="1570581743921" duration="1251000" />
-      <workItem from="1570631612555" duration="2532000" />
+      <workItem from="1570631612555" duration="6538000" />
+      <workItem from="1571364377332" duration="3610000" />
+      <workItem from="1571398058855" duration="3012000" />
+      <workItem from="1571538993012" duration="3481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398960000" />
+    <option name="totallyTimeSpent" value="413069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -650,11 +731,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.014173228" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.012598425" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2510981" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24377745" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -688,11 +769,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/TeacherServiceManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Models/Stable/Follow.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/ConsultOrderManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Admin/Stable/PhonenumPoolBindController.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/PhonenumPoolBindManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/WebSiteManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/ConsultManager.php" />
     <entry file="file://$PROJECT_DIR$/app/Components/Project.php">
@@ -733,20 +809,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GameManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="248" column="13" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GameOrderManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1769">
-          <caret line="377" column="8" selection-start-line="377" selection-start-column="8" selection-end-line="377" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GameManager.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GameOrderManager.php" />
     <entry file="file://$PROJECT_DIR$/app/Components/UserLoginManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6116" />
@@ -759,69 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AdManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1757">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/db/alertCharset.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" selection-start-line="39" selection-end-line="41" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/PlayerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4408">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="64" selection-start-line="64" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GiftManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3781">
-          <caret line="205" selection-start-line="205" selection-end-line="208" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GiftOrderManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4997">
-          <caret line="269" column="7" selection-start-line="269" selection-start-column="7" selection-end-line="269" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/PlayerGameManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6517">
-          <caret line="349" column="18" selection-start-line="349" selection-start-column="18" selection-end-line="349" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/PlayerManager.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GiftManager.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/GiftOrderManager.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/PlayerGameManager.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/managerv2.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2071">
@@ -843,23 +848,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/BPurseManager.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="84" selection-start-line="84" selection-end-line="90" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/BPurseManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -867,31 +856,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/IndicatorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1599">
-          <caret line="147" column="34" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/ExamOrderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/IndicatorController.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/ExamOrderController.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/api/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/manager.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -902,12 +872,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/DeviceLogController.php">
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/DeviceLogController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="323">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1805">
+          <caret line="95" selection-start-line="95" selection-end-line="97" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AddressManager.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/api/api_route.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -916,24 +919,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AddressController.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AdManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="3135">
+          <caret line="171" column="25" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/FollowManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="109" selection-start-line="109" selection-end-line="112" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/admin_api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="154" column="68" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="154" selection-end-column="68" />
+        <state relative-caret-position="181">
+          <caret line="52" selection-start-line="52" selection-end-line="56" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="53" column="44" selection-end-line="409" />
+        <state relative-caret-position="187">
+          <caret line="66" selection-start-line="66" selection-end-line="72" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/db/alertCharset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="155" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Common/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="207" column="6" lean-forward="true" selection-start-line="207" selection-start-column="6" selection-end-line="207" selection-end-column="6" />
         </state>
       </provider>
     </entry>

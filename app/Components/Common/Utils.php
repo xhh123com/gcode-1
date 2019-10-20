@@ -9,6 +9,7 @@
 namespace App\Components\Common;
 
 use Geohash\GeoHash;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 
@@ -73,6 +74,8 @@ class Utils
     //登录账号
     const ACCOUNT_TYPE_VAL = ['0' => '手机号密码', '1' => '手机号短信码', '2' => '小程序', '3' => '公众号'];
 
+    //用户性别
+    const USER_GENDER_VAL = ['0' => '保密', '1' => '男', '2' => '女'];
 
     /*
     * 判断一个对象是不是空，一般用于校验参数等
@@ -165,23 +168,33 @@ class Utils
         return $response;
     }
 
-
     /**
      * 经纬度转GeoHash编码
      *
      * $lat  $lon经纬度参数
      *
+     * $key 1:代表获取8个区域所有  配合$distance字段使用   2：创建门店时存到数据库中的经纬度转geohash编码字段
+     *
      * $distance 获取范围的经度6差不多在范围1000米内 值越大越精确
      */
-    public static function getGeoHash($lat, $lon, $distance = null)
+    public static function latAndLngCoding($lat, $lon, $key, $distance)
     {
         $geohash = new GeoHash();
         $geo = $geohash->encode($lat, $lon);
-        Utils::processLog(__METHOD__, '', 'geo:' . json_encode($geo));
-        if (!Utils::isObjNull($distance)) {
+
+        if ($key == 1) {
+            //取出相邻八个区域
             $geo = substr($geo, 0, $distance);
+            $neighbors = $geohash->neighbors($geo);
+            array_push($neighbors, $geo);
+            $values = [];
+            foreach ($neighbors as $key => $val) {
+                array_push($values, $val);
+//                $values .= '\'' . $val . '\'' .',';
+            }
+            $geo = $values;
         }
-        Utils::processLog(__METHOD__, '', 'substr geo:' . json_encode($geo));
+
         return $geo;
     }
 
@@ -192,27 +205,40 @@ class Utils
      * By TerryQi
      *
      * 2018-05-29
+     *
+     * @param num：代表邀请码数
+     *
+     * type：代表类型 0：不带英文 1：带英文
      */
-    public static function createInviteCode($num)
+    public static function createInviteCode($num, $type = 0)
     {
-        $code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $rand = $code[rand(0, 25)]
-            . strtoupper(dechex(date('m')))
-            . date('d')
-            . substr(time(), -5)
-            . substr(microtime(), 2, 5)
-            . sprintf('%02d', rand(0, 99));
-        for (
-            $a = md5($rand, true),
-            $s = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ',
-            $d = '',
-            $f = 0;
-            $f < $num;
-            $g = ord($a[$f]),
-            $d .= $s[($g ^ ord($a[$f + 8])) - $g & 0x1F],
-            $f++
-        ) ;
-        return $d;
+        $base_str = '123456789';
+        if ($type == 1) {
+            $base_str = $base_str . 'ABCDEFGHJKMNPQRSTUVWXYZ';
+        }
+        $code = "";
+        for ($i = 0; $i < $num; $i++) {
+            $rand_pos = rand(0, (strlen($base_str) - 1));
+            $code = $code . self::substr_text($base_str, $rand_pos, 1);
+        }
+        return $code;
+    }
+
+
+    /*
+     * 格式化值，即将81000格式化为8.1w
+     * 
+     * By TerryQi
+     * 
+     * 2019-10-15
+     */
+    public static function formateValue($value)
+    {
+        if ($value > 10000) {
+            $value = (double)$value / 10000;
+            $value = round($value, 2) . "w";
+        }
+        return $value;
     }
 
     /*
@@ -290,7 +316,7 @@ class Utils
     public static function getRandomString($len, $chars = null)
     {
         if (is_null($chars)) {
-            $chars = "abcdef0123456789";
+            $chars = "0123456789";
         }
         mt_srand(10000000 * (double)microtime());
         for ($i = 0, $str = '', $lc = strlen($chars) - 1; $i < $len; $i++) {
@@ -418,13 +444,16 @@ class Utils
     }
 
     /*
-     * 生成uuid全部用户相同，uuid即为token
+     * 生成uuid全部用户不相同，uuid即为token
+     *
+     * By TerryQi
      *
      */
     public static function getGUID()
     {
+        $uuid = null;
         if (function_exists('com_create_guid')) {
-            return com_create_guid();
+            $uuid = com_create_guid();
         } else {
             mt_srand((double)microtime() * 10000);//optional for php 4.2.0 and up.
             $charid = strtoupper(md5(uniqid(rand(), true)));
@@ -434,8 +463,16 @@ class Utils
                 . substr($charid, 12, 4)
                 . substr($charid, 16, 4)
                 . substr($charid, 20, 12);
-            return $uuid;
         }
+        //2019-08-07进行uuid的加盐
+        /*
+         * By TerryQi
+         *
+         * 2019-08-17
+         */
+        $uuid = $uuid . strtoupper(md5(rand(0, 9) . rand(0, 9) . rand(0, 9) . rand(0, 9)));       //加盐方法为随机成功4个数字，然后md5加密，然后都转大写
+
+        return $uuid;
     }
 
     /**
@@ -533,7 +570,7 @@ class Utils
      * @str：需要截取的字符串 start：开始位置 length：长度 chartset：字符集 suffix 结束符
      */
 
-    public static function substrText($str, $start = 0, $length, $charset = "utf-8", $suffix = "")
+    public static function substr_text($str, $start = 0, $length, $charset = "utf-8", $suffix = "")
     {
         if (function_exists("mb_substr")) {
             return mb_substr($str, $start, $length, $charset) . $suffix;
@@ -628,20 +665,6 @@ class Utils
             $en_week_num = 7;
         }
         return $en_week_num;
-    }
-
-
-    /*
-     * 手机号脱敏隐藏中间4位
-     *
-     * By TerryQi
-     *
-     * 2019-09-16
-     */
-    public static function hidePhonenum($phonenum)
-    {
-        $resstr = substr_replace($phonenum, '****', 3, 4);
-        return $resstr;
     }
 
 
