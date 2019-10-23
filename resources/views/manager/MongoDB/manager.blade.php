@@ -204,7 +204,8 @@ class {{$manager_name}}
 public static function setInfo($info, $data)
 {
 
-    $class_arr = new \ReflectionClass({{$model_name}}::class);
+    $ref = new \ReflectionClass({{$model_name}}Doc::class);
+    $class_arr = $ref->getDefaultProperties();
     unset($class_arr['collection_name']);
     $data = array_merge($class_arr, $data);
 
