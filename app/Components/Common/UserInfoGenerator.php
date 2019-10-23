@@ -580,4 +580,18 @@ class UserInfoGenerator
     {
         return rand(0, 2);
     }
+
+    /*
+     * 生成数字串
+     *
+     */
+    public static function getCode($num)
+    {
+        $code = "";
+        for ($i = 0; $i < $num; $i++) {
+            $code = $code . rand(0, 9);
+        }
+        return $code;
+    }
+
 }

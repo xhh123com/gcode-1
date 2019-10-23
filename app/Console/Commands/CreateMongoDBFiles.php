@@ -3,27 +3,25 @@
 namespace App\Console\Commands;
 
 use App\Components\DateTool;
+use App\MongoDB\Models\Doc\PartnerDoc;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
-use Monolog\Utils;
 
-class CreateFiles extends Command
+class CreateMongoDBFiles extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'auto:createFiles';
+    protected $signature = 'auto:createMongoDBFiles';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'the command for create models and components';
+    protected $description = 'Command description';
 
     /**
      * Create a new command instance.
@@ -42,37 +40,31 @@ class CreateFiles extends Command
      */
     public function handle()
     {
-        //开始进行文件创建
-        echo "start create files \n";
-        $tables = DB::select("show tables");
-        echo "the database tables:" . json_encode($tables) . "\n";
-
+        //路由变量数组
         $route_param_items = [];
-
         $table_names = [];
 
-        //循环获取表信息，创建model、manager和controller
-        foreach ($tables as $key => $value) {
-            echo "\n\n\nkey:" . json_encode($key) . " value:" . json_encode($value);
-            //转换为数组
-            $value = json_decode(json_encode($value), true);
-            echo "\ntable " . json_encode($key) . ":" . json_encode($value['Tables_in_' . env('DB_DATABASE', '')]) . "\n";
+        //类的名称数组
+        $class_names_arr = self::getFiles();
+//        echo "class_names_arr" . json_encode($class_names_arr);
 
-            $table_name = $value['Tables_in_' . env('DB_DATABASE', '')];     //表名
-
-            array_push($table_names, $table_name);
-
-            $model_name = self::getModelName($table_name);      //model名
-            $var_name = self::getVarNameByTableName($table_name);
+        foreach ($class_names_arr as $class_name) {
+            $ref = new \ReflectionClass("App\MongoDB\Models\Doc\\" . $class_name);
+            $vars_arr = $ref->getDefaultProperties();       //获取全部的变量
+            $columns_arr = array_keys($vars_arr);
+            $model_name = substr($class_name, 0, strlen($class_name) - 3);    //model名
+            $var_name = $vars_arr['collection_name'];       //表名，变量名
+            $table_name = $var_name;            //表名
             $router_blade_var_name = self::getVarName($model_name);
             $controller_name = self::getControllerName($model_name);
             $manager_name = self::getManagerName($model_name);      //manager名
 
             self::createModel($model_name, $table_name);            //建设model
 
-            self::createManager($model_name, $table_name, $manager_name);     //建设Manager
-            self::createManagerV2($model_name, $table_name, $manager_name); //建设V2版本的Manager
-            self::createManagerV3($model_name, $table_name, $manager_name, $var_name); //建设V3版本的Manager
+            self::createManager($model_name, $table_name, $manager_name, $columns_arr);     //建设Manager
+            self::createManagerV2($model_name, $table_name, $manager_name, $columns_arr); //建设V2版本的Manager
+            self::createManagerV3($model_name, $table_name, $manager_name, $var_name, $columns_arr); //建设V3版本的Manager
+            self::createMongoDBManager($model_name, $table_name, $manager_name, $var_name, $columns_arr); //建设V3版本的Manager
 
             //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
@@ -80,6 +72,9 @@ class CreateFiles extends Command
 
             //生成APIController
             self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
+
+            //生成AdminApiController
+            self::createAdminAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
 
             //向路由数组中推入数据
             $item = [
@@ -95,12 +90,33 @@ class CreateFiles extends Command
         //生成api路由
         self::createAPIRoute($route_param_items);
 
+        //生成admin api路由
+        self::createAdminAPIRoute($route_param_items);
+
         //生成修改字符集的信息
         self::createAlertDB($table_names);
 
 
     }
 
+
+
+    //获取storage/app/MongoDB/Models/Doc下的全部文件
+    //@return array形式的数组，里面存储文件名，文件名为去掉Doc.php，即UserDoc.php输出为User
+    public static function getFiles()
+    {
+        //获取全部的app/MongoDB/Models/Doc下的文件，全部的对象文件
+        $doc_files = Storage::disk('app')->allFiles('./MongoDB/Models/Doc');
+        $class_names_arr = [];
+        foreach ($doc_files as $doc_file) {
+//            echo "doc_file:" . $doc_file . "\n";
+            $base_doc_file_name = basename($doc_file);
+//            echo "base_doc_file_name:" . $base_doc_file_name . "\n";
+            $base_doc_file_name = str_replace(strrchr($base_doc_file_name, '.'), '', $base_doc_file_name);
+            array_push($class_names_arr, $base_doc_file_name);
+        }
+        return $class_names_arr;
+    }
 
     //根据表名生成Model名
     private function getModelName($table_name)
@@ -178,19 +194,19 @@ class CreateFiles extends Command
             'model_name' => $model_name,
             'table_name' => $table_name
         ];
-        $file_string = view('model', $param)->__toString();
+        $file_string = view('model/MongoDB/model', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
 
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Models/Stable/' . $model_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Models/MongoDB/' . $model_name . ".php", $file_string);
     }
 
 
     //生成Manager文件
-    private function createManager($model_name, $table_name, $manager_name)
+    private function createManager($model_name, $table_name, $manager_name, $columns_arr)
     {
-        $columns = Schema::getColumnListing($table_name);
+        $columns = $columns_arr;
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
 
         $param = [
@@ -210,9 +226,9 @@ class CreateFiles extends Command
 
 
     //生成ManagerV2文件
-    private function createManagerV2($model_name, $table_name, $manager_name)
+    private function createManagerV2($model_name, $table_name, $manager_name, $columns_arr)
     {
-        $columns = Schema::getColumnListing($table_name);
+        $columns = $columns_arr;
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
 
         $param = [
@@ -232,9 +248,9 @@ class CreateFiles extends Command
 
 
     //生成ManagerV3文件
-    private function createManagerV3($model_name, $table_name, $manager_name, $var_name)
+    private function createManagerV3($model_name, $table_name, $manager_name, $var_name, $columns_arr)
     {
-        $columns = Schema::getColumnListing($table_name);
+        $columns = $columns_arr;
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
 
         $param = [
@@ -251,6 +267,29 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Components/Redis/' . $manager_name . ".php", $file_string);
+    }
+
+
+    //生成MongoDBManagerV3文件
+    private function createMongoDBManager($model_name, $table_name, $manager_name, $var_name, $columns_arr)
+    {
+        $columns = $columns_arr;
+        echo "\ncolumns:\n" . json_encode($columns) . "\n";
+
+        $param = [
+            'var_name' => $var_name,
+            'model_name' => $model_name,
+            'table_name' => $table_name,
+            'manager_name' => $manager_name,
+            'columns' => $columns,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('manager/MongoDB/manager', $param)->__toString();
+        echo "\nmodel code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Components/MongoDB/' . $manager_name . ".php", $file_string);
     }
 
     //生成admin的controller文件
@@ -325,6 +364,27 @@ class CreateFiles extends Command
         Storage::disk('local')->put('/Code/Api/Stable/' . $controller_name . ".php", $file_string);
     }
 
+
+    //生成AdminAPI的controller文件
+    private function createAdminAPIController($model_name, $var_name, $controller_name, $router_blade_var_name)
+    {
+        $param = [
+            'model_name' => $model_name,
+            'var_name' => $var_name,
+            'controller_name' => $controller_name,
+            'router_blade_var_name' => $router_blade_var_name,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('adminApi.controller', $param)->__toString();
+
+        echo "\napi.controller code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/AdminApi/Stable/' . $controller_name . ".php", $file_string);
+    }
+
+
     //生成API route文件
     private function createAPIRoute($route_param_items)
     {
@@ -337,6 +397,21 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Route/api.php', $file_string);
+    }
+
+
+    //生成AdminAPI route文件
+    private function createAdminAPIRoute($route_param_items)
+    {
+        $param = [
+            'route_param_items' => $route_param_items
+        ];
+        $file_string = view('adminApi.api_route', $param)->__toString();
+
+        echo "\napi route string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Route/admin_api.php', $file_string);
     }
 
 
@@ -363,5 +438,18 @@ class CreateFiles extends Command
         return $file_string;
     }
 
+
+    /*
+     * 获取全部属性数组
+     *
+     */
+    private function getColumnsArr($properties)
+    {
+        $columns_arr = [];
+        foreach ($properties as $property) {
+            array_push($columns_arr, $property);
+        }
+        return $columns_arr;
+    }
 
 }
