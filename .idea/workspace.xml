@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,17 +22,17 @@
       <file leaf-file-name="CreateFiles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7619">
-              <caret line="406" selection-start-line="110" selection-start-column="2" selection-end-line="406" />
+            <state relative-caret-position="100">
+              <caret line="300" selection-start-line="300" selection-end-line="318" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateMongoDBFiles.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateMongoDBFiles.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="37" column="6" selection-end-line="455" />
+            <state relative-caret-position="252">
+              <caret line="71" column="41" selection-end-line="476" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -73,29 +76,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="1938">
               <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/model/MongoDB/model.blade.php">
+      <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="304">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.php">
+      <file leaf-file-name="controllerv4.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="-370">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -113,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pointL</find>
       <find>lun</find>
       <find>shop_order</find>
       <find>servsta</find>
@@ -138,11 +140,12 @@
       <find>teacher_f</find>
       <find>deviceSet</find>
       <find>device</find>
-      <find>create</find>
       <find>local</find>
       <find>$var_name</find>
       <find>$columns_arr</find>
       <find>class_na</find>
+      <find>'admin'</find>
+      <find>create</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -162,6 +165,8 @@
       <replace>{{$model_name}}</replace>
       <replace>$self_admin</replace>
       <replace>$columns_arr</replace>
+      <replace>self_admin</replace>
+      <replace>'self_admin'</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\gcode\storage\app\Models</dir>
@@ -178,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/DB/controller.blade.php" />
         <option value="$USER_HOME$/Desktop/微信订单对账文件/WXImport.php" />
         <option value="$USER_HOME$/Desktop/微信订单对账文件/ExcelController.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/CouponManager.php" />
@@ -213,7 +217,6 @@
         <option value="$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/controller.blade.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text" />
         <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
         <option value="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" />
@@ -226,9 +229,11 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerUserLoginDocManager.php" />
         <option value="C:/Windows/System32/drivers/etc/hosts" />
         <option value="$USER_HOME$/Desktop/hosts" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" />
         <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" />
         <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" />
       </list>
     </option>
   </component>
@@ -402,6 +407,13 @@
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -502,19 +514,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\gcode\app\MongoDB\Models\Doc" />
-      <recent name="D:\xampp\htdocs\gcode\resources\views\manager\MongoDB" />
-      <recent name="D:\xampp\htdocs\gcode\resources\views\manager" />
-      <recent name="D:\xampp\htdocs\gcode\resources\views\model" />
-      <recent name="D:\xampp\htdocs\gcode\app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\gcode\resources\views\model\MongoDB" />
       <recent name="D:\xampp\htdocs\gcode\app" />
       <recent name="D:\xampp\htdocs\gcode\app\Components" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\admin" />
       <recent name="D:\xampp\htdocs\gcode\resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\gcode\resources\views\admin" />
+      <recent name="D:\xampp\htdocs\gcode\app\MongoDB\Models\Doc" />
+      <recent name="D:\xampp\htdocs\gcode\resources\views\manager\MongoDB" />
+      <recent name="D:\xampp\htdocs\gcode\resources\views\manager" />
+      <recent name="D:\xampp\htdocs\gcode\resources\views\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -650,15 +662,15 @@
       <workItem from="1571710902847" duration="595000" />
       <workItem from="1571757303109" duration="198000" />
       <workItem from="1571757565025" duration="16520000" />
-      <workItem from="1571837121224" duration="3767000" />
+      <workItem from="1571837121224" duration="4519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438824000" />
+    <option name="totallyTimeSpent" value="439576000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -702,14 +714,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/BPurseManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/IndicatorController.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/ExamOrderController.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/api/controller.blade.php">
@@ -848,13 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7619">
-          <caret line="406" selection-start-line="110" selection-start-column="2" selection-end-line="406" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/manager/mongoDBManager.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/managerv2.blade.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Models/MongoDB/PartnerCompanyDoc.php" />
@@ -935,20 +932,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="37" column="6" selection-end-line="455" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1938">
+          <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
+        <state relative-caret-position="304">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="300" selection-start-line="300" selection-end-line="318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="41" selection-end-line="476" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

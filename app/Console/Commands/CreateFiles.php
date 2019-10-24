@@ -77,6 +77,7 @@ class CreateFiles extends Command
             //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
             self::createAdminControllerV3($model_name, $var_name, $controller_name, $router_blade_var_name);
+            self::createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name);
 
             //生成APIController
             self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
@@ -295,6 +296,25 @@ class CreateFiles extends Command
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Admin/Stable/' . $controller_name . ".php", $file_string);
+    }
+
+    //生成admin的controller文件
+    private function createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name)
+    {
+        $param = [
+            'model_name' => $model_name,
+            'var_name' => $var_name,
+            'controller_name' => $controller_name,
+            'router_blade_var_name' => $router_blade_var_name,
+            'date_time' => DateTool::getCurrentTime()
+        ];
+
+        $file_string = view('admin.controllerv4', $param)->__toString();
+
+        echo "\nadmin.controller code string:\n" . $file_string . "\n";
+        $file_string = self::replaceTags($file_string);
+
+        Storage::disk('local')->put('/Code/Admin/StableV4/' . $controller_name . ".php", $file_string);
     }
 
     //生成web route文件
