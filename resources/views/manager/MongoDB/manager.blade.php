@@ -133,7 +133,7 @@ class {{$manager_name}}
     *
     * {{$date_time}}
     */
-    public static function getListByCon($con_arr, $is_paginate)
+    public static function getListByCon($con_arr, $is_paginate, $page = 1)
     {
         $infos = new {{$model_name}}();
 
@@ -181,7 +181,7 @@ class {{$manager_name}}
         if (array_key_exists('page_size', $con_arr) && !Utils::isObjNull($con_arr['page_size'])) {
             $page_size = $con_arr['page_size'];
         }
-        $infos = $infos->paginate($page_size);
+        $infos = $infos->skip(($page - 1) * $page_size)->paginate($page_size);
     }
     else {
         //如果con_arr中有page_size信息 2019-10-08优化，可以不分页也获取多条数据
