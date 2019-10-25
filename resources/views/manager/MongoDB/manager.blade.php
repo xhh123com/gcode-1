@@ -90,6 +90,7 @@ class {{$manager_name}}
     {
         $level_arr = explode(',', $level);
 
+        $info->id = $info->_id;
         $info->status_str = Utils::COMMON_STATUS_VAL[$info->status];
 
         //0:
