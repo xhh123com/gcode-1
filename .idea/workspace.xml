@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="293">
-              <caret line="215" column="5" lean-forward="true" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+              <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -582,12 +582,12 @@
       <workItem from="1571908586350" duration="1057000" />
       <workItem from="1571911360405" duration="535000" />
       <workItem from="1571912215722" duration="1352000" />
-      <workItem from="1571966258358" duration="671000" />
+      <workItem from="1571966258358" duration="1352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443734000" />
+    <option name="totallyTimeSpent" value="444415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -892,7 +892,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
-          <caret line="215" column="5" lean-forward="true" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+          <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
         </state>
       </provider>
     </entry>
