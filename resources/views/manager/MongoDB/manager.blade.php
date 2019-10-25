@@ -203,11 +203,17 @@ class {{$manager_name}}
 */
 public static function setInfo($info, $data)
 {
-
     $ref = new \ReflectionClass({{$model_name}}Doc::class);
-    $class_arr = $ref->getDefaultProperties();
-    unset($class_arr['collection_name']);
-    $data = array_merge($class_arr, $data);
+
+    //编辑情况，不处理data
+    if (array_key_exists('_id', $data) && !Utils::isObjNull($data['_id'])) {
+
+    } else {
+    //新建情况，处理data
+        $class_arr = $ref->getDefaultProperties();
+        unset($class_arr['collection_name']);
+        $data = array_merge($class_arr, $data);
+    }
 
     if (array_key_exists('_id', $data)) {
         $info->_id = $data['_id'];
