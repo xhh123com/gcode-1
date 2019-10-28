@@ -75,10 +75,15 @@ class {{$model_name}}Controller
         $self_admin = AdminManager::getById($data['self_admin_id']);
 
         $status = '1';
+        $is_paginate = true;
         $level='Y';
         //配置获取信息级别
         if (array_key_exists('level', $data) && !Utils::isObjNull($data['level'])) {
             $level = $data['level'];
+        }
+        //配置是否分页
+        if (array_key_exists('is_paginate', $data) && !Utils::isObjNull($data['is_paginate'])) {
+            $is_paginate = $data['is_paginate'];
         }
 
         //配置条件
@@ -88,7 +93,7 @@ class {{$model_name}}Controller
         $con_arr = array(
             'status' => $status,
         );
-        ${{$var_name}}s = {{$model_name}}Manager::getListByCon($con_arr, true);
+        ${{$var_name}}s = {{$model_name}}Manager::getListByCon($con_arr, $is_paginate);
         foreach (${{$var_name}}s as ${{$var_name}}) {
             ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, $level);
         }

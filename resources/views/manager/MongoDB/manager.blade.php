@@ -219,21 +219,21 @@ public static function setInfo($info, $data)
     @foreach($columns as $column)
 
         @if($column=='seq')
-            if (array_key_exists('{{$column}}', $data)) {
-            $info->{{$column}} = intval($data['{{$column}}']);
-            }
+    if (array_key_exists('{{$column}}', $data)) {
+    $info->{{$column}} = intval($data['{{$column}}']);
+    }
         @elseif(strpos("num",$column)||strpos("count",$column)||strpos("stock",$column))
-            if (array_key_exists('{{$column}}', $data)) {
-            $info->{{$column}} = intval($data['{{$column}}']);
-            }
+    if (array_key_exists('{{$column}}', $data)) {
+    $info->{{$column}} = intval($data['{{$column}}']);
+    }
         @elseif(strpos("price",$column)||strpos("height",$column)||strpos("weight",$column))
-            if (array_key_exists('{{$column}}', $data)) {
-            $info->{{$column}} = double($data['{{$column}}']);
-            }
+    if (array_key_exists('{{$column}}', $data)) {
+    $info->{{$column}} = double($data['{{$column}}']);
+    }
         @else
-            if (array_key_exists('{{$column}}', $data)) {
-            $info->{{$column}} = $data['{{$column}}'];
-            }
+    if (array_key_exists('{{$column}}', $data)) {
+    $info->{{$column}} = $data['{{$column}}'];
+    }
         @endif
 
     @endforeach
