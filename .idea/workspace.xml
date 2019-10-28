@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="220" column="44" selection-start-line="220" selection-start-column="44" selection-end-line="220" selection-end-column="44" />
+              <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="95" column="72" lean-forward="true" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+              <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -55,17 +55,8 @@
       <file leaf-file-name="DeviceFaultCategoryManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="248" column="46" selection-start-line="248" selection-start-column="46" selection-end-line="248" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3553">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="494">
+              <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -358,6 +349,12 @@
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -665,12 +662,12 @@
       <workItem from="1571911360405" duration="535000" />
       <workItem from="1571912215722" duration="1352000" />
       <workItem from="1571966258358" duration="2122000" />
-      <workItem from="1572054573011" duration="6540000" />
+      <workItem from="1572054573011" duration="6883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451725000" />
+    <option name="totallyTimeSpent" value="452068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -717,13 +714,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
-          <caret line="95" selection-start-line="95" selection-end-line="97" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AddressManager.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/api/api_route.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -958,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="248" column="46" selection-start-line="248" selection-start-column="46" selection-end-line="248" selection-end-column="46" />
+        <state relative-caret-position="494">
+          <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -973,7 +963,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="95" column="72" lean-forward="true" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+          <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -984,10 +974,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5301" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="220" column="44" selection-start-line="220" selection-start-column="44" selection-end-line="220" selection-end-column="44" />
+          <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
         </state>
       </provider>
     </entry>
