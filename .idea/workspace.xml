@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="" />
+    <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="230" column="34" selection-start-line="230" selection-start-column="34" selection-end-line="230" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="220" column="44" selection-start-line="220" selection-start-column="44" selection-end-line="220" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -663,12 +665,12 @@
       <workItem from="1571911360405" duration="535000" />
       <workItem from="1571912215722" duration="1352000" />
       <workItem from="1571966258358" duration="2122000" />
-      <workItem from="1572054573011" duration="6198000" />
+      <workItem from="1572054573011" duration="6540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451383000" />
+    <option name="totallyTimeSpent" value="451725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -984,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="230" column="34" selection-start-line="230" selection-start-column="34" selection-end-line="230" selection-end-column="34" />
+        <state relative-caret-position="285">
+          <caret line="220" column="44" selection-start-line="220" selection-start-column="44" selection-end-line="220" selection-end-column="44" />
         </state>
       </provider>
     </entry>

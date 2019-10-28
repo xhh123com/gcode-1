@@ -218,7 +218,7 @@ public static function setInfo($info, $data)
 
     @foreach($columns as $column)
 
-        @if($column=='seq')
+        @if($column=='seq'||$column=='status')
     if (array_key_exists('{{$column}}', $data)) {
     $info->{{$column}} = intval($data['{{$column}}']);
     }
