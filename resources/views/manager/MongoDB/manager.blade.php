@@ -228,7 +228,7 @@ public static function setInfo($info, $data)
     }
         @elseif(strpos("price",$column)||strpos("height",$column)||strpos("weight",$column))
     if (array_key_exists('{{$column}}', $data)) {
-    $info->{{$column}} = double($data['{{$column}}']);
+    $info->{{$column}} = doubleval($data['{{$column}}']);
     }
         @else
     if (array_key_exists('{{$column}}', $data)) {
