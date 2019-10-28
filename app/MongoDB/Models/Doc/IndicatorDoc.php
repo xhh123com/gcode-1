@@ -15,7 +15,6 @@ class IndicatorDoc
 
     private $life_system_id;    //生命系统id
     private $life_system_level1_type_id;          //	生命系统一级分类id
-    private $life_system_type;          //	生命系统分类
     private $name;       //	名称
     private $code;      //	编码（英文编码，区分大小写，空格英文下划线替代）
     private $intro;      //	简介(指标解释)

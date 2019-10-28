@@ -106,9 +106,6 @@ class {{$model_name}}Controller
     public function setStatus(Request $request, $id)
     {
         $data = $request->all();
-        if (is_numeric($id) !== true) {
-            return ApiResponse::makeResponse(false, "合规校验失败，请检查参数", ApiResponse::INNER_ERROR);
-        }
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
         ${{$var_name}} = {{$model_name}}Manager::setInfo(${{$var_name}}, $data);
         {{$model_name}}Manager::save(${{$var_name}});
