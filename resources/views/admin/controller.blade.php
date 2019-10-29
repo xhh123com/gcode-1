@@ -106,10 +106,10 @@ class {{$model_name}}Controller
     public function setStatus(Request $request, $id)
     {
         $data = $request->all();
-        if (is_numeric($id) !== true) {
-            return ApiResponse::makeResponse(false, "合规校验失败，请检查参数", ApiResponse::INNER_ERROR);
-        }
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
+        if (!${{$var_name}}) {
+        return ApiResponse::makeResponse(false, "未找到删除信息", ApiResponse::INNER_ERROR);
+        }
         ${{$var_name}} = {{$model_name}}Manager::setInfo(${{$var_name}}, $data);
         ${{$var_name}}->save();
         return ApiResponse::makeResponse(true, ${{$var_name}}, ApiResponse::SUCCESS_CODE);
@@ -125,10 +125,10 @@ class {{$model_name}}Controller
     public function deleteById(Request $request, $id)
     {
         $data = $request->all();
-        if (is_numeric($id) !== true) {
-        return ApiResponse::makeResponse(false, "合规校验失败，请检查参数", ApiResponse::INNER_ERROR);
-        }
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
+        if (!${{$var_name}}) {
+        return ApiResponse::makeResponse(false, "未找到删除信息", ApiResponse::INNER_ERROR);
+        }
         if (${{$var_name}}) {
             {{$model_name}}Manager::deleteById(${{$var_name}}->id);
         }

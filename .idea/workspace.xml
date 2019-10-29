@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/controller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controller.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
+            <state relative-caret-position="19">
+              <caret line="232" column="13" lean-forward="true" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndicatorAlertRuleDoc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndicatorAlertRuleManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/IndicatorAlertRuleManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1625">
+              <caret line="312" column="17" selection-start-line="246" selection-start-column="4" selection-end-line="312" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -28,7 +50,7 @@
       <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/api/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1558">
               <caret line="82" column="90" selection-start-line="82" selection-start-column="90" selection-end-line="82" selection-end-column="90" />
             </state>
           </provider>
@@ -37,7 +59,7 @@
       <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="1805">
               <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
             </state>
           </provider>
@@ -46,7 +68,7 @@
       <file leaf-file-name="ExamOrderReportResultManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderReportResultManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="4731">
               <caret line="257" column="22" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
             </state>
           </provider>
@@ -55,26 +77,8 @@
       <file leaf-file-name="DeviceFaultCategoryManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="4161">
               <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LifeSystemLevel1TypeDoc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemLevel1TypeDoc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="129" selection-start-line="129" selection-end-line="135" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -82,17 +86,26 @@
       <file leaf-file-name="controllerv4.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-708">
-              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state relative-caret-position="295">
+              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="111" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndicatorDoc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php">
+      <file leaf-file-name="controller.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" selection-start-line="11" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="247">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="130" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllerv3.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="108" selection-start-line="108" selection-end-line="111" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -168,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/storage/app/Code/Components/BusCompanyManager.php" />
-        <option value="$PROJECT_DIR$/storage/app/Code/Admin/AppyWorkerController.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/JobOrderItemManager.php" />
         <option value="$PROJECT_DIR$/app/Components/DateTool.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Route/api.php" />
@@ -178,7 +189,6 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/UserManager.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Route/web.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/web_route.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/controller.blade.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/AdminV3/ChatroomController.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/ComponentsV3/ChatroomManager.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/ytx.api_php/ytx.Config.php" />
@@ -213,12 +223,15 @@
         <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Admin/StableV4/DeviceController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" />
         <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/controller.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/api/controller.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
+        <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/controller.blade.php" />
       </list>
     </option>
   </component>
@@ -338,6 +351,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,21 +375,6 @@
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-              <item name="Doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -498,7 +497,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -662,12 +660,13 @@
       <workItem from="1571911360405" duration="535000" />
       <workItem from="1571912215722" duration="1352000" />
       <workItem from="1571966258358" duration="2122000" />
-      <workItem from="1572054573011" duration="6883000" />
+      <workItem from="1572054573011" duration="7410000" />
+      <workItem from="1572309383837" duration="1418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452068000" />
+    <option name="totallyTimeSpent" value="454013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -676,11 +675,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.0047244094" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.0031496063" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29941434" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29136163" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -714,17 +713,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AddressManager.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/api/api_route.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/adminApi/api_route.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/AdminApi/Stable/AddressController.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/AdManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/Stable/FollowManager.php" />
@@ -873,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5605">
@@ -891,9 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="71" column="41" selection-end-line="476" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="2451">
           <caret line="129" selection-start-line="129" selection-end-line="135" selection-end-column="118" />
         </state>
       </provider>
@@ -939,37 +917,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-708">
-          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="4161">
           <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderReportResultManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="4731">
           <caret line="257" column="22" selection-start-line="257" selection-start-column="22" selection-end-line="257" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/adminApi/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="1805">
           <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/api/controller.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1558">
           <caret line="82" column="90" selection-start-line="82" selection-start-column="90" selection-end-line="82" selection-end-column="90" />
         </state>
       </provider>
@@ -979,10 +950,45 @@
         <state relative-caret-position="-5301" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/IndicatorAlertRuleManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="312" column="17" selection-start-line="246" selection-start-column="4" selection-end-line="312" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="220" column="26" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
+        <state relative-caret-position="19">
+          <caret line="232" column="13" lean-forward="true" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="108" selection-start-line="108" selection-end-line="111" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="111" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/controller.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="130" selection-end-column="9" />
         </state>
       </provider>
     </entry>
