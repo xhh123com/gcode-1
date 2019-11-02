@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminLoginDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminLoginDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultCategoryDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultCategoryDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultHandleRecordDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultHandleRecordDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceLogDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceLogDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceSetLogDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceSetLogDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderIndicatorResultDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderIndicatorResultDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderReportResultDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderReportResultDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemLevel1TypeDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemLevel1TypeDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyActivityDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyActivityDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDeviceDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDeviceDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyStoreDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyStoreDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDeviceDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDeviceDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserLoginDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserLoginDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/controller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controller.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controllerv4.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllerv4.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="471">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -98,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1858">
-              <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+            <state relative-caret-position="395">
+              <caret line="175" column="64" selection-start-line="175" selection-start-column="54" selection-end-line="175" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -247,11 +219,11 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php" />
         <option value="$PROJECT_DIR$/resources/views/adminApi/controller.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/api/controller.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
         <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/controller.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/controllerv3.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
       </list>
     </option>
   </component>
@@ -705,12 +677,12 @@
       <workItem from="1572054573011" duration="7410000" />
       <workItem from="1572309383837" duration="2735000" />
       <workItem from="1572418696961" duration="4329000" />
-      <workItem from="1572658485505" duration="264000" />
+      <workItem from="1572658485505" duration="838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="459923000" />
+    <option name="totallyTimeSpent" value="460497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1033,20 +1005,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1858">
-          <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/web_route.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/controllerv4.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="471">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="175" column="64" selection-start-line="175" selection-start-column="54" selection-end-line="175" selection-end-column="64" />
         </state>
       </provider>
     </entry>

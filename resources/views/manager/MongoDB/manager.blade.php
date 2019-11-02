@@ -173,7 +173,7 @@ class {{$manager_name}}
             $infos = $infos->inRandomOrder();
         }
     }
-    $infos = $infos->orderby('seq', 'desc')->orderby('id', 'desc');
+    $infos = $infos->orderby('seq', 'desc')->orderby('created_at', 'desc');
 
     //分页设定
     if ($is_paginate) {
