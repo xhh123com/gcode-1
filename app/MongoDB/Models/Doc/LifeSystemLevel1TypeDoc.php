@@ -19,6 +19,6 @@ class LifeSystemLevel1TypeDoc
     private $intro;       //	简介
     private $content_html;      //	内容，指导意见
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

@@ -21,6 +21,6 @@ class DeviceSetLogDoc
     private $code;      //	设备序资产编号，一般是条形码号
     private $admin_id;      //	配置管理员id
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

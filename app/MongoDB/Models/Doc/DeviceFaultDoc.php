@@ -21,8 +21,8 @@ class DeviceFaultDoc
     private $device_fault_category_id;      //故障类型id
     private $img;      //故障图片，多张图片用，逗号分隔
     private $cotent;      //故障描述
-    private $handle_status = 0;      //处理状态 0：未处理 1：已处理
+    private $handle_status = '0';      //处理状态 0：未处理 1：已处理
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

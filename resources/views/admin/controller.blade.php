@@ -129,9 +129,7 @@ class {{$model_name}}Controller
         if (!${{$var_name}}) {
         return ApiResponse::makeResponse(false, "未找到删除信息", ApiResponse::INNER_ERROR);
         }
-        if (${{$var_name}}) {
-            {{$model_name}}Manager::deleteById(${{$var_name}}->id);
-        }
+        {{$model_name}}Manager::deleteById(${{$var_name}}->id);
         return ApiResponse::makeResponse(true, "删除成功", ApiResponse::SUCCESS_CODE);
     }
 

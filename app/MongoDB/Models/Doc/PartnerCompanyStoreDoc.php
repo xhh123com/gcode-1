@@ -22,6 +22,6 @@ class PartnerCompanyStoreDoc
     private $lat;       //维度
     private $intro;        //介绍
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

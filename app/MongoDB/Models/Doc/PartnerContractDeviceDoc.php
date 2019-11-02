@@ -16,10 +16,7 @@ class PartnerContractDeviceDoc
     private $partner_id;    //合作方id
     private $partner_contract_id;          //合同id
     private $device_id;          //设备id
-    private $valid_start_at;       //开始时间
-    private $valid_end_at;      //结束时间
-    private $valid_status = 1;       //状态
     private $seq = 99;       //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

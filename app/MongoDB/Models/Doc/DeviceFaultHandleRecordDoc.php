@@ -17,8 +17,8 @@ class DeviceFaultHandleRecordDoc
     private $admin_id;          //管理员id
     private $img;          //故障图片，多张图片用，逗号分隔
     private $cotent;       //	故障描述
-    private $result_status = 0;      //处理状态 0：未完成（故障经过处理未恢复） 1：已完成（故障经过处理已经恢复）
+    private $result_status = '0';      //处理状态 0：未完成（故障经过处理未恢复） 1：已完成（故障经过处理已经恢复）
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

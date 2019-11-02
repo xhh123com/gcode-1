@@ -20,15 +20,15 @@ class ExamOrderDoc
     private $partner_company_store_id;      //	检测时合作公司投放点id
     private $partner_company_activity_id;      //	检测时活动id
     private $device_id;      //	检测时设备id
-    private $gender = 0;    //用户性别 0：保密 1：男性 2：女性
-    private $age = 0;      //	检测时间点的年龄
-    private $height = 0;      //	检测时间的身高
-    private $weight = 0;      //	检测时间的体重
+    private $gender = '0';    //用户性别 0：保密 1：男性 2：女性
+    private $age = '0';      //	检测时间点的年龄
+    private $height = '0';      //	检测时间的身高
+    private $weight = '0';      //	检测时间的体重
     private $front_exam_img;      //	正面照片
     private $right_exam_img;      //	右侧照片
     private $remark;      //	备注
-    private $order_status = 0;      //	检测进度 0：未开始 1：进行中 2：已完成 3：已过期
+    private $order_status = '0';      //	检测进度 0：未开始 1：进行中 2：已完成 3：已过期
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

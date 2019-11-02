@@ -19,8 +19,8 @@ class PartnerCompanyActivityDoc
     private $name;       //	活动名称
     private $valid_start_at;      //开始时间
     private $valid_end_at;       //	结束时间
-    private $valid_status = 1;       //分配状态
+    private $valid_status = '1';       //分配状态
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }

@@ -68,6 +68,7 @@ class {{$model_name}}Controller
         ${{$var_name}} = new {{$model_name}}();
         if (array_key_exists('id', $data)) {
         ${{$var_name}} = {{$model_name}}Manager::getById($data['id']);
+        ${{$var_name}} = {{$model_name}}Manager::getInfoByLevel(${{$var_name}}, "");
         }
         return view('admin.{{$router_blade_var_name}}.edit', ['self_admin' => $self_admin, 'data' => ${{$var_name}}, 'upload_token' => $upload_token]);
     }
@@ -129,9 +130,7 @@ class {{$model_name}}Controller
         if (!${{$var_name}}) {
         return ApiResponse::makeResponse(false, "未找到删除信息", ApiResponse::INNER_ERROR);
         }
-        if (${{$var_name}}) {
-            {{$model_name}}Manager::deleteById(${{$var_name}}->id);
-        }
+        {{$model_name}}Manager::deleteById(${{$var_name}}->id);
         return ApiResponse::makeResponse(true, "删除成功", ApiResponse::SUCCESS_CODE);
     }
 

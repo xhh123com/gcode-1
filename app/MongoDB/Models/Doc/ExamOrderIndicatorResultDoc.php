@@ -22,6 +22,6 @@ class ExamOrderIndicatorResultDoc
     private $device_id;      //	检测时设备id
     private $json_value;      // json的value值
     private $seq = 99;        //排序       值越大越靠前
-    private $status = 1;        //状态        0：失效 1：生效
+    private $status = '1';        //状态        0：失效 1：生效
 
 }
