@@ -20,6 +20,7 @@ class PartnerCompanyDoc
     private $address;       //地址
     private $intro;     //介绍
     private $p_partner_company_id = '0';      //上级公司id        0：代表本身是总公司
+    private $unit_price = 0.01;      //使用单价
     private $seq = 99;       //排序       值越大越靠前
     private $status = '1';        //状态        0：失效 1：生效
 

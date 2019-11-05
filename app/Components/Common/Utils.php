@@ -401,9 +401,9 @@ class Utils
      */
     public static function downloadFile($url, $path, $filename)
     {
-        Utils::processLog(__METHOD__, '', " " . "url:" . "  local_avatar_url:" . $url);
-        Utils::processLog(__METHOD__, '', " " . "path:" . "  local_avatar_path:" . $path);
-        Utils::processLog(__METHOD__, '', " " . "filename:" . "  local_avatar_filename:" . $filename);
+        Utils::processLog(__METHOD__, '', " " . "url:" . $url);
+        Utils::processLog(__METHOD__, '', " " . "path:" . $path);
+        Utils::processLog(__METHOD__, '', " " . "filename:" . $filename);
 
 //        header("Content-type=html/text;charset=utf-8");
 
@@ -419,23 +419,23 @@ class Utils
         if (self::isObjNull($file)) {
             return false;
         }
-        Utils::processLog(__METHOD__, '', " " . "file:" . $file);
+//        Utils::processLog(__METHOD__, '', " " . "file:" . $file);
 
         curl_close($ch);
-        Utils::processLog(__METHOD__, '', " " . "  ch:" . $ch);
-        Utils::processLog(__METHOD__, '', " " . "  url:" . $url);
-        Utils::processLog(__METHOD__, '', " " . "  filename——1:" . $filename);
+//        Utils::processLog(__METHOD__, '', " " . "  ch:" . $ch);
+//        Utils::processLog(__METHOD__, '', " " . "  url:" . $url);
+//        Utils::processLog(__METHOD__, '', " " . "  filename——1:" . $filename);
 
 //        $filename=iconv("utf-8","gb2312",$filename);//中文转码
 
-        Utils::processLog(__METHOD__, '', " " . "  filename——2:" . $filename);
+//        Utils::processLog(__METHOD__, '', " " . "  filename——2:" . $filename);
 
 
         $resource = fopen($path . '/' . $filename, 'a');
-        Utils::processLog(__METHOD__, '', " " . "resource:" . $resource);
+//        Utils::processLog(__METHOD__, '', " " . "resource:" . $resource);
 
         fwrite($resource, $file);
-        Utils::processLog(__METHOD__, '', " " . "fwrite(resource, file):" . fwrite($resource, $file));
+//        Utils::processLog(__METHOD__, '', " " . "fwrite(resource, file):" . fwrite($resource, $file));
 
         fclose($resource);
         Utils::processLog(__METHOD__, '', " " . "filename_end:" . $filename);
