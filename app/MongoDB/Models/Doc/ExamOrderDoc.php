@@ -27,7 +27,9 @@ class ExamOrderDoc
     private $front_exam_img;      //	正面照片
     private $right_exam_img;      //	右侧照片
     private $remark;      //	备注
-    private $order_status = '0';      //	检测进度 0：未开始 1：进行中 2：已完成 3：已过期
+    private $posture_exam_status = '0';     //体态检测状态 0：未开始 1：进行中 2：已完成
+    private $indicator_exam_status = '0';       //指标检测状态 0：未开始 1：进行中 2：已完成
+    private $order_status = '1';      //检测订单状态 	0:未开始, 1:进行中, 2:已完成 3：已过期
     private $seq = 99;        //排序       值越大越靠前
     private $status = '1';        //状态        0：失效 1：生效
 

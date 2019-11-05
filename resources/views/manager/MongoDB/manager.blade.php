@@ -168,10 +168,6 @@ class {{$manager_name}}
         if (array_key_exists('status', $orderby_arr) && !Utils::isObjNull($orderby_arr['status'])) {
             $infos = $infos->orderby('status', $orderby_arr['status']);
         }
-        //如果传入random，代表要随机获取
-        if (array_key_exists('random', $orderby_arr) && !Utils::isObjNull($orderby_arr['random'])) {
-            $infos = $infos->inRandomOrder();
-        }
     }
     $infos = $infos->orderby('seq', 'desc')->orderby('created_at', 'desc');
 
@@ -192,6 +188,13 @@ class {{$manager_name}}
         }
             $infos = $infos->get();
         }
+
+        //如果传入random，代表要随机获取，其中random->3代表获取3个随机数据
+        //请注意，random是预留字段，数据库中不允许设定字段名叫做random
+        if (array_key_exists('random', $con_arr) && !Utils::isObjNull($con_arr['random'])) {
+            $infos = $infos->random($con_arr['random']);
+        }
+
         return $infos;
     }
 
