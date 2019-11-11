@@ -39,7 +39,7 @@ class RedisManager
     {
         $value = Redis::get(Project::APP_EN_NAME . ":" . $key);
         $value = unserialize($value);
-        Utils::processLog(__METHOD__, "", "获取缓存 key:" . $key . " value:" . json_encode($value));
+//        Utils::processLog(__METHOD__, "", "获取缓存 key:" . $key . " value:" . json_encode($value));
         //redis取值如果取不到返回值为false
         if ($value == false) {
             return null;
@@ -62,7 +62,7 @@ class RedisManager
     public static function setex($key, $value, $lifetime = 60 * 60 * 12)
     {
         $result = Redis::setex(Project::APP_EN_NAME . ":" . $key, $lifetime, serialize($value));
-        Utils::processLog(__METHOD__, "", "设置缓存 key:" . $key . " value:" . json_encode($value));
+//        Utils::processLog(__METHOD__, "", "设置缓存 key:" . $key . " value:" . json_encode($value));
         return $result;
     }
 
@@ -78,7 +78,79 @@ class RedisManager
     public static function del($key)
     {
         $result = Redis::del(Project::APP_EN_NAME . ":" . $key);
-        Utils::processLog(__METHOD__, "", "删除缓存 key:" . $key . " result:" . json_encode($result));
+//        Utils::processLog(__METHOD__, "", "删除缓存 key:" . $key . " result:" . json_encode($result));
+        return $result;
+    }
+
+
+    /*
+     * 有序稽核操作
+     *
+     * By TerryQi
+     *
+     */
+    public static function zincrby($key, $increment, $member)
+    {
+        $result = Redis::zincrby(Project::APP_EN_NAME . ":" . $key, $increment, $member);
+        Utils::processLog(__METHOD__, "", "设置 key:" . $key . " result:" . json_encode($result));
+        return $result;
+    }
+
+
+    /*
+     * 正序返回元素
+     *
+     * By TerryQi
+     *
+     * 2019-10-09
+     */
+    public static function zrange($key, $start, $stop)
+    {
+        $result = Redis::zrange(Project::APP_EN_NAME . ":" . $key, $start, $stop, 'withscores');
+//        Utils::processLog(__METHOD__, "", "设置 key:" . $key . " result:" . json_encode($result));
+        return $result;
+    }
+
+
+    /*
+     * 倒序返回元素
+     *
+     * By TerryQi
+     *
+     * 2019-10-09
+     */
+    public static function zrevrange($key, $start, $stop)
+    {
+        $result = Redis::zrevrange(Project::APP_EN_NAME . ":" . $key, $start, $stop, 'withscores');
+//        Utils::processLog(__METHOD__, "", "设置 key:" . $key . " result:" . json_encode($result));
+        return $result;
+    }
+
+
+    /*
+     * 合并有序数组
+     *
+     * By TerryQi
+     *
+     * 2019-10-09
+     */
+    public static function zunionstore($destination, $keys_arr)
+    {
+        $result = Redis::zunionstore(Project::APP_EN_NAME . ":" . $destination, $keys_arr);
+//        Utils::processLog(__METHOD__, "", "设置 key:" . $key . " result:" . json_encode($result));
+        return $result;
+    }
+
+    /*
+     * 获取集合中某个用户的分数
+     *
+     * By TerryQi
+     *
+     */
+    public static function zscore($key, $member)
+    {
+        $result = Redis::zscore(Project::APP_EN_NAME . ":" . $key, $member);
+//        Utils::processLog(__METHOD__, "", "设置 key:" . $key . " result:" . json_encode($result));
         return $result;
     }
 
