@@ -6,12 +6,16 @@ namespace App\Components\SensitiveWord\ALiYun;
 
 use App\Components\Common\Utils;
 
+//该Manager用于阿里云的敏感词查询接口
+//一般发布内容类(内容、评论)需要使用敏感词的查询
 class ContainsManager
 {
+
+    const HOST = "http://apistore.tongchengyue.com";
+
     /*
-     * isValid
      *
-     * 是否存在敏感词
+     * 判断文字中是否有敏感词
      *
      *
      * $content 敏感词
@@ -22,10 +26,10 @@ class ContainsManager
      */
     public static function isWordValid($content)
     {
-        $host = "http://apistore.tongchengyue.com";
+        $host = HOST;
         $path = "/sw/check";
         $method = "POST";
-        $appcode = "da98754f85504271922193482d796383";
+        $appcode = env('ALIYUN_SENSITIVE_APPCODE', "");
         $headers = array();
         array_push($headers, "Authorization:APPCODE " . $appcode);
         //根据API的要求，定义相对应的Content-Type
@@ -45,7 +49,11 @@ class ContainsManager
             curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         }
         curl_setopt($curl, CURLOPT_POSTFIELDS, $bodys);
-        return curl_exec($curl);
+        $response = curl_exec($curl);
+        curl_close($curl);
+        $response = json_decode($response, true);        //转化为数组
+
+        return $response;
     }
 
 
@@ -63,10 +71,10 @@ class ContainsManager
    */
     public static function isContentValid($content)
     {
-        $host = "http://apistore.tongchengyue.com";
+        $host = HOST;
         $path = "/sw/isContains";
         $method = "POST";
-        $appcode = "da98754f85504271922193482d796383";
+        $appcode = env('ALIYUN_SENSITIVE_APPCODE', "");
         $headers = array();
         array_push($headers, "Authorization:APPCODE " . $appcode);
         //根据API的要求，定义相对应的Content-Type
@@ -86,7 +94,12 @@ class ContainsManager
             curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         }
         curl_setopt($curl, CURLOPT_POSTFIELDS, $bodys);
-        return curl_exec($curl);
+
+        $response = curl_exec($curl);
+        curl_close($curl);
+        $response = json_decode($response, true);        //转化为数组
+
+        return $response;
     }
 
 }

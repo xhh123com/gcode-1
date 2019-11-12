@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Components/JPush/JPushManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/JPush/JPushManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Components/SensitiveWord/ALiYun/ContainsManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/SensitiveWord/ALiYun/ContainsManager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,46 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PartnerCompanyDeviceManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerCompanyDeviceManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3439">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PartnerCompanyManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerCompanyManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3439">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
-              <folding>
-                <element signature="e#112#144#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExamOrderDoc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderDoc.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ExamOrderManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3971">
-              <caret line="217" selection-start-line="217" selection-end-line="217" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExamOrderIndicatorResultDoc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderIndicatorResultDoc.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="ExamOrderIndicatorResultManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderIndicatorResultManager.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -66,29 +28,64 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manager.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
+            <state relative-caret-position="3686">
               <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamOrderPostureResultDoc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderPostureResultDoc.php">
+      <file leaf-file-name="AgoraTool.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/Agora/AgoraTool.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="EasemobTool.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/Easemob/EasemobTool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="89" selection-start-line="89" selection-end-line="89" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamOrderPostureResultManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderPostureResultManager.php">
+      <file leaf-file-name="ContainsManager.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Components/SensitiveWord/ALiYun/ContainsManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4769">
-              <caret line="259" selection-start-line="259" selection-end-line="259" />
+            <state relative-caret-position="240">
+              <caret line="76" column="55" selection-end-line="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JPushManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/JPush/JPushManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-342">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasemobBaseManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/Easemob/EasemobBaseManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1256" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Components/Project.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -164,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Components/DateTool.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Route/api.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/IndexRecommendManager.php" />
         <option value="$PROJECT_DIR$/resources/views/manager_v2.blade.php" />
@@ -191,7 +187,6 @@
         <option value="$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text" />
         <option value="$PROJECT_DIR$/resources/views/db/alertCharset.blade.php" />
         <option value="$PROJECT_DIR$/app/Components/Common/UserInfoGenerator.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/Stable/DeviceFaultCategoryManager.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/resources/views/model/model.blade.php" />
@@ -215,6 +210,8 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/AdminManager.php" />
         <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
         <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Components/SensitiveWord/ALiYun/ContainsManager.php" />
       </list>
     </option>
   </component>
@@ -334,6 +331,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,6 +343,48 @@
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Easemob" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="JPush" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="SensitiveWord" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="SensitiveWord" type="462c0819:PsiDirectoryNode" />
+              <item name="ALiYun" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +508,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,18 +519,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\gcode\app\Components" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\model\MongoDB" />
       <recent name="D:\xampp\htdocs\gcode\app" />
-      <recent name="D:\xampp\htdocs\gcode\app\Components" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\admin" />
       <recent name="D:\xampp\htdocs\gcode\resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\gcode\app\Components" />
       <recent name="D:\xampp\htdocs\gcode\app\MongoDB\Models\Doc" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\admin" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\manager\MongoDB" />
       <recent name="D:\xampp\htdocs\gcode\resources\views\manager" />
-      <recent name="D:\xampp\htdocs\gcode\resources\views\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,25 +676,26 @@
       <workItem from="1572418696961" duration="4329000" />
       <workItem from="1572658485505" duration="12446000" />
       <workItem from="1573091254409" duration="530000" />
-      <workItem from="1573177361398" duration="902000" />
+      <workItem from="1573177361398" duration="1603000" />
+      <workItem from="1573525532729" duration="1249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473537000" />
+    <option name="totallyTimeSpent" value="475487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.0015748031" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28330892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27525622" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -689,52 +729,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerDocManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerManager.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Windows/System32/drivers/etc/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="43" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Components/Common/UserInfoGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8531">
-          <caret line="458" column="61" selection-start-line="458" selection-start-column="9" selection-end-line="458" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5605">
@@ -961,9 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3439">
           <caret line="189" selection-start-line="189" selection-end-line="189" />
-          <folding>
-            <element signature="e#112#144#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,10 +991,50 @@
     <entry file="file://$PROJECT_DIR$/resources/views/managerv3.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/SensitiveWord/SensitiveWord/ALiYun/ContainsManager.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="3686">
           <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Agora/AgoraTool.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Project.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/JPush/JPushManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Easemob/EasemobBaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1256" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/Easemob/EasemobTool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="89" selection-start-line="89" selection-end-line="89" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Components/SensitiveWord/ALiYun/ContainsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="76" column="55" selection-end-line="105" />
         </state>
       </provider>
     </entry>
