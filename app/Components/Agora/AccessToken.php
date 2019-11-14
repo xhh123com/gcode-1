@@ -7,6 +7,7 @@ class Message
     public $salt;
     public $ts;
     public $privileges;
+
     public function __construct()
     {
         $this->salt = rand(0, 100000);

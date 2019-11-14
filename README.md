@@ -84,4 +84,9 @@ php artisan auto:createUsers
 默认生成自增主键的处理，可以一起运行
 
 
+#2019年11月进行了优化
+整理了生成代码的目录，同时增加了MongoDB的Model、Manager和Controller生成
+其中命令为
+php artisan auto:createMongoDBFiles
+
 
