@@ -249,6 +249,18 @@ class {{$manager_name}}
         return $info;
     }
 
+    /*
+    * 获取最近的一条信息
+    *
+    * By TerryQi
+    *
+    */
+    public static function getLatest()
+    {
+        $info = self::getListByCon(['status' => '1'], false)->first();
+        return $info;
+    }
+
 }
 
 </html>
