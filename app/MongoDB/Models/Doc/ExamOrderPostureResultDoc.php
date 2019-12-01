@@ -14,7 +14,6 @@ class ExamOrderPostureResultDoc
     private $collection_name = "exam_order_posture_result";       //mongodb的collection名称
 
     private $exam_order_id;          //	检测订单号
-    private $task_id;           //检测任务id
     private $front_exam_img;       //	正面照片
     private $right_exam_img;      //	右侧照片
     private $result_json;      //	体态检测的json结果

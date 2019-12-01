@@ -22,7 +22,7 @@ class PartnerUserDoc
     private $email;      //邮箱
     private $remark;       //备注
     private $duty;      //职责
-    private $role = 100;          //角色（后续可以扩展） 100：普通人员 200：管理员
+    private $role = '100';          //角色（后续可以扩展） 100：普通人员 200：管理员
     private $seq = 99;       //排序       值越大越靠前
     private $status = '1';        //状态        0：失效 1：生效
 }

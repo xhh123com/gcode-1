@@ -18,7 +18,7 @@ class AllocDeviceTaskDoc
     private $admin_id;       //导入管理员
     private $partner_user_id;       //合作人员id
     private $total_count = 0;       //总数
-    private $successed_count = 0;       //导入成功数
+    private $success_count = 0;       //导入成功数
     private $remark;          //	导入备注
     private $task_status = '0';       //	任务状态
     private $seq = 99;        //排序       值越大越靠前
