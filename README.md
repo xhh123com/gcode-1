@@ -89,4 +89,7 @@ php artisan auto:createUsers
 其中命令为
 php artisan auto:createMongoDBFiles
 
+#2019年12月进行了优化
+Common文件夹下是团队整理的Manager工具类，包括极光推送、环信IM、声网等
+
 
