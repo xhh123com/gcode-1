@@ -210,7 +210,7 @@ public static function setInfo($info, $data)
     $ref = new \ReflectionClass({{$model_name}}Doc::class);
 
     //编辑情况，不处理data，$data有id或者$info->_id不为空
-    if ((array_key_exists('id', $data) && !Utils::isObjNull($data['id'])) || ($info->_id != null)) {
+    if ($info->_id != null) {
 
     } else {
     //新建情况，处理data
