@@ -60,6 +60,15 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        //自定义中间件
+        'BeforeRequest' => \App\Http\Middleware\BeforeRequest::class,
+        'CheckAdminLogin' => \App\Http\Middleware\CheckAdminLogin::class,//后台登录中间件
+        'CheckUserToken' => \App\Http\Middleware\CheckUserToken::class,     //校验用户token
+        'CheckAdminToken' => \App\Http\Middleware\CheckAdminToken::class,        //校验管理员token
+        'CheckTestENV' => \App\Http\Middleware\CheckTestENV::class,
+        'RecordFormId' => \App\Http\Middleware\RecordFormId::class,     //记录form_id中间件
+        'CheckItemValid' => \App\Http\Middleware\CheckItemValid::class,     //校验元素有效性
     ];
 
     /**

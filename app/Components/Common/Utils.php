@@ -67,12 +67,15 @@ class Utils
     const WEEK_VAL = ['1' => '星期一', '1' => '星期一', '2' => '星期二', '3' => '星期三', '4' => '星期四', '5' => '星期五', '6' => '星期六', '7' => '星期日',];
 
     //账号类型
-    const ACCOUNT_TYPE_TEL_PASSWORD = "0";       //手机号加密码
-    const ACCOUNT_TYPE_TEL_CODE = "1";        //手机号加随机密码
-    const ACCOUNT_TYPE_XCX = "2";     //小程序
-    const ACCOUNT_TYPE_FWH = "3";     //公众号
+    const ACCOUNT_TYPE_TEL_PASSWORD = "tel_password";       //手机号加密码
+    const ACCOUNT_TYPE_TEL_CODE = "tel_code";        //手机号加随机密码
+    const ACCOUNT_TYPE_XCX = "xhx";     //小程序
+    const ACCOUNT_TYPE_FWH = "fwh";     //公众号
     //登录账号
-    const ACCOUNT_TYPE_VAL = ['0' => '手机号密码', '1' => '手机号短信码', '2' => '小程序', '3' => '公众号'];
+    const ACCOUNT_TYPE_VAL = [self::ACCOUNT_TYPE_TEL_PASSWORD => '手机号密码'
+        , self::ACCOUNT_TYPE_TEL_CODE => '手机号短信码'
+        , self::ACCOUNT_TYPE_XCX => '小程序'
+        , self::ACCOUNT_TYPE_FWH => '公众号'];
 
     //用户性别
     const USER_GENDER_VAL = ['0' => '保密', '1' => '男', '2' => '女'];
