@@ -21,10 +21,10 @@ class CheckAdminLogin
     public function handle($request, Closure $next)
     {
         //检测session中是否有登录信息
-        if (!$request->session()->has('admin')) {
+        if (!$request->session()->has('self_admin')) {
             return redirect('/admin/login');
         }
-        $admin = $request->session()->get('admin');
+        $admin = $request->session()->get('self_admin');
         $admin = AdminManager::getById($admin->id);     //增加判断status==0的失效踢出管理员
         if ($admin->status == '0') {
             return redirect('/admin/login');

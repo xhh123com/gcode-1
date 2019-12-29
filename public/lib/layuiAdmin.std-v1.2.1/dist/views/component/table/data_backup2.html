@@ -1,0 +1,416 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>赋值已知数据 - 数据表格</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../../layuiadmin/style/admin.css" media="all">
+    <link id="layuicss-layer" rel="stylesheet"
+          href="http://localhost:63343/APICloud/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/layer.css?v=3.1.1"
+          media="all">
+</head>
+<body layadmin-themealias="default" style="">
+
+<div class="layui-card layadmin-header">
+    <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+        <a lay-href="">主页</a><span lay-separator="">/</span>
+        <a><cite>组件</cite></a><span lay-separator="">/</span>
+        <a><cite>数据表格</cite></a><span lay-separator="">/</span>
+        <a><cite>简单用法</cite></a>
+    </div>
+</div>
+
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">列宽自动分配</div>
+                <div class="layui-card-body">
+                    <table class="layui-hide" id="test-table-autowidth"></table>
+                    <div class="layui-form layui-border-box layui-table-view">
+                        <div class="layui-table-box">
+                            <div class="layui-table-header" style="width: 100% !important;">
+                                <table cellspacing="0" cellpadding="0" border="0" class="layui-table"
+                                       style="word-wrap:break-word; word-break:break-all;width: 100%;">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="id" data-key="1-0-0" class=" layui-unselect">
+                                            <div class="layui-table-cell laytable-cell-1-0-0"><span>ID</span><span
+                                                    class="layui-table-sort layui-inline"><i
+                                                    class="layui-edge layui-table-sort-asc" title="升序"></i><i
+                                                    class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                                            </div>
+                                        </th>
+                                        <th data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1"><span>用户名</span></div>
+                                        </th>
+                                        <th data-field="sex" data-key="1-0-2" class=" layui-unselect">
+                                            <div class="layui-table-cell laytable-cell-1-0-2"><span>性别</span><span
+                                                    class="layui-table-sort layui-inline"><i
+                                                    class="layui-edge layui-table-sort-asc" title="升序"></i><i
+                                                    class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                                            </div>
+                                        </th>
+                                        <th data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3"><span>城市</span></div>
+                                        </th>
+                                        <th data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4"><span>签名</span></div>
+                                        </th>
+                                        <th data-field="classify" data-key="1-0-5" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5" align="center">
+                                                <span>职业</span></div>
+                                        </th>
+                                        <th data-field="experience" data-key="1-0-6" class=" layui-unselect">
+                                            <div class="layui-table-cell laytable-cell-1-0-6" align="right">
+                                                <span>积分</span><span class="layui-table-sort layui-inline"><i
+                                                    class="layui-edge layui-table-sort-asc" title="升序"></i><i
+                                                    class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                                            </div>
+                                        </th>
+                                        <th data-field="score" data-key="1-0-7" class=" layui-unselect">
+                                            <div class="layui-table-cell laytable-cell-1-0-7" align="right">
+                                                <span>评分</span><span class="layui-table-sort layui-inline"><i
+                                                    class="layui-edge layui-table-sort-asc" title="升序"></i><i
+                                                    class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                                            </div>
+                                        </th>
+                                        <th data-field="wealth" data-key="1-0-8" class=" layui-unselect">
+                                            <div class="layui-table-cell laytable-cell-1-0-8" align="right">
+                                                <span>财富</span><span class="layui-table-sort layui-inline"><i
+                                                    class="layui-edge layui-table-sort-asc" title="升序"></i><i
+                                                    class="layui-edge layui-table-sort-desc" title="降序"></i></span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr data-index="0" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10000</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-0</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-0</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-0</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">作家</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">255</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">57</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">82830700</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="1" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10001</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-1</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-1</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-1</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">
+                                                此人
+                                            </div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">884884884884884884884884884884884884884884884884884884884884</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">27</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class=""
+                                            style="width: 10px;!important;">
+                                            <div class="layui-table-cell">
+                                                6492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690
+                                                6492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690649286906492869064928690
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="2" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10002</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-2</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-2</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-2</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">酱油</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">650</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">31</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">6298078</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="3" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10003</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-3</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-3</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-3</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">诗人</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">362</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">68</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">37117017</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="4" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10004</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-4</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-4</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-4</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">作家</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">807</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">6</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">76263262</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="5" class="">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10005</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-5</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-5</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-5</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">作家</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">173</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">87</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">60344147</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="6">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10006</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-6</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-6</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-6</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">作家</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">982</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">34</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">57768166</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="7">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10007</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-7</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-7</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-7</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">作家</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">727</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">28</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">82030578</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="8">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10008</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-8</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">男</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-8</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-8</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">词人</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">951</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">14</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">16503371</div>
+                                        </td>
+                                    </tr>
+                                    <tr data-index="9">
+                                        <td data-field="id" data-key="1-0-0" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-0">10009</div>
+                                        </td>
+                                        <td data-field="username" data-key="1-0-1" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-1">user-9</div>
+                                        </td>
+                                        <td data-field="sex" data-key="1-0-2" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-2">女</div>
+                                        </td>
+                                        <td data-field="city" data-key="1-0-3" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-3">城市-9</div>
+                                        </td>
+                                        <td data-field="sign" data-key="1-0-4" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-4">签名-9</div>
+                                        </td>
+                                        <td data-field="classify" data-key="1-0-5" align="center" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-5">词人</div>
+                                        </td>
+                                        <td data-field="experience" data-key="1-0-6" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-6">484</div>
+                                        </td>
+                                        <td data-field="score" data-key="1-0-7" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-7">75</div>
+                                        </td>
+                                        <td data-field="wealth" data-key="1-0-8" align="right" class="">
+                                            <div class="layui-table-cell laytable-cell-1-0-8">86801934</div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <style></style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../layuiadmin/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '../../../layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'table'], function () {
+        var table = layui.table;
+
+
+    });
+
+    })
+    ;
+</script>
+
+</body>
+</html>

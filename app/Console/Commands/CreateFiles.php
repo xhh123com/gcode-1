@@ -38,6 +38,8 @@ class CreateFiles extends Command
     /**
      * Execute the console command.
      *
+     * 配置好env后，使用该控制台命令即可生成相关的Controller、Manager、Model和路由代码
+     *
      * @return mixed
      */
     public function handle()
@@ -68,16 +70,14 @@ class CreateFiles extends Command
             $controller_name = self::getControllerName($model_name);
             $manager_name = self::getManagerName($model_name);      //manager名
 
-            self::createModel($model_name, $table_name);            //建设model
+            self::createMySQLModel($model_name, $table_name);            //建设model
 
-            self::createManager($model_name, $table_name, $manager_name);     //建设Manager
-            self::createManagerV2($model_name, $table_name, $manager_name); //建设V2版本的Manager
-            self::createManagerV3($model_name, $table_name, $manager_name, $var_name); //建设V3版本的Manager
+            self::createMySQLManager($model_name, $table_name, $manager_name);     //建设Manager
+            self::createMySQLManagerStable($model_name, $table_name, $manager_name); //建设MySQL的stable
+            self::createRedisManager($model_name, $table_name, $manager_name, $var_name); //建设Redis版本的Manager
 
             //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
-            self::createAdminControllerV3($model_name, $var_name, $controller_name, $router_blade_var_name);
-            self::createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name);
 
             //生成APIController
             self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
@@ -178,24 +178,25 @@ class CreateFiles extends Command
         return $controller_name;
     }
 
-    //生成Model文件
-    private function createModel($model_name, $table_name)
+    //生成Model文件-MySQL
+    private function createMySQLModel($model_name, $table_name)
     {
         $param = [
             'model_name' => $model_name,
             'table_name' => $table_name
         ];
-        $file_string = view('model', $param)->__toString();
+        $file_string = view('gcode.models.MySQL.model', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
 
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Models/Stable/' . $model_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Models/Mysql/' . $model_name . ".php", $file_string);
     }
 
 
     //生成Manager文件
-    private function createManager($model_name, $table_name, $manager_name)
+    //基础版本，里面是用strpos
+    private function createMySQLManager($model_name, $table_name, $manager_name)
     {
         $columns = Schema::getColumnListing($table_name);
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
@@ -208,16 +209,17 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('manager', $param)->__toString();
+        $file_string = view('gcode.managers.MySQL.manager', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Components/V1/' . $manager_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Components/MySQL/V1/' . $manager_name . ".php", $file_string);
     }
 
 
     //生成ManagerV2文件
-    private function createManagerV2($model_name, $table_name, $manager_name)
+    //基础版本，进行level字符串的拆分
+    private function createMySQLManagerStable($model_name, $table_name, $manager_name)
     {
         $columns = Schema::getColumnListing($table_name);
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
@@ -230,16 +232,16 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('managerv2', $param)->__toString();
+        $file_string = view('gcode.managers.MySQL.managerv2', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Components/Stable/' . $manager_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Components/MySQL/Stable/' . $manager_name . ".php", $file_string);
     }
 
 
-    //生成ManagerV3文件
-    private function createManagerV3($model_name, $table_name, $manager_name, $var_name)
+    //生成Redis-Manager文件
+    private function createRedisManager($model_name, $table_name, $manager_name, $var_name)
     {
         $columns = Schema::getColumnListing($table_name);
         echo "\ncolumns:\n" . json_encode($columns) . "\n";
@@ -253,7 +255,7 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('managerv3', $param)->__toString();
+        $file_string = view('gcode.managers.Redis.manager', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
@@ -271,50 +273,12 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('admin.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.admin.controllerv4', $param)->__toString();
 
         echo "\nadmin.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Admin/V1/' . $controller_name . ".php", $file_string);
-    }
-
-    //生成admin的controller文件
-    private function createAdminControllerV3($model_name, $var_name, $controller_name, $router_blade_var_name)
-    {
-        $param = [
-            'model_name' => $model_name,
-            'var_name' => $var_name,
-            'controller_name' => $controller_name,
-            'router_blade_var_name' => $router_blade_var_name,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('admin.controllerv3', $param)->__toString();
-
-        echo "\nadmin.controller code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Admin/Stable/' . $controller_name . ".php", $file_string);
-    }
-
-    //生成admin的controller文件
-    private function createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name)
-    {
-        $param = [
-            'model_name' => $model_name,
-            'var_name' => $var_name,
-            'controller_name' => $controller_name,
-            'router_blade_var_name' => $router_blade_var_name,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('admin.controllerv4', $param)->__toString();
-
-        echo "\nadmin.controller code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Admin/StableV4/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/Admin/Stable/' . $controller_name . ".php", $file_string);
     }
 
     //生成web route文件
@@ -323,7 +287,7 @@ class CreateFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('admin.web_route', $param)->__toString();
+        $file_string = view('gcode.controllers.admin.web_route', $param)->__toString();
 
         echo "\nweb route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -343,7 +307,7 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('api.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.api.controller', $param)->__toString();
 
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -363,7 +327,7 @@ class CreateFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('adminApi.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.adminApi.controller', $param)->__toString();
 
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -378,7 +342,7 @@ class CreateFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('api.api_route', $param)->__toString();
+        $file_string = view('gcode.controllers.api.api_route', $param)->__toString();
 
         echo "\napi route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -393,7 +357,7 @@ class CreateFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('adminApi.api_route', $param)->__toString();
+        $file_string = view('gcode.controllers.adminApi.api_route', $param)->__toString();
 
         echo "\napi route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -408,7 +372,7 @@ class CreateFiles extends Command
         $param = [
             'table_names' => $table_names
         ];
-        $file_string = view('db.alertCharset', $param)->__toString();
+        $file_string = view('gcode.db.alertCharset', $param)->__toString();
 
         echo "\nalert charset string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
