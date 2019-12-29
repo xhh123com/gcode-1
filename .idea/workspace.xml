@@ -2,735 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/web_login_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/web_login_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dist/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dist/app.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dist/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dist/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dist/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/doT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/echarts.common.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jQuery/jquery-2.2.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/md5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/Moxie.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/Moxie.xap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/i18n/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/backgrounds.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/buttons-disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/buttons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/delete.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/done.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/error.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/throbber.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/img/transp50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/jquery.plupload.queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.plupload.queue/jquery.plupload.queue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.ui.plupload/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.ui.plupload/img/plupload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.ui.plupload/jquery.ui.plupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/jquery.ui.plupload/jquery.ui.plupload.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/moxie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/moxie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/plupload.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/plupload.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plupload/plupload.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/qiniu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/jquery/1.9.1/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/jquery/1.9.1/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/console/prograss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/console/top-card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/console/top-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/content/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/content/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/content/tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/forum/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/forum/replys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/layer/photos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/layim/getList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/layim/getMembers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/mall/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/menu1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/message/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/message/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/message/direct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/message/new.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/message/notice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/table/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/table/demo2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/table/demo3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/table/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/table/user30.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/upload/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/forget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/reg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/resetpass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/user/sms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/useradmin/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/workorder/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/json/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/html/find.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/html/getmsg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/html/msgbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/mobile/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/skin/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/layim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/lib/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/lib/extend/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/lib/extend/echartsTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/lib/view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/console.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/contlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/forum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/im.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/sample.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/senior.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/modules/workorder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/bg-none.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/logo-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/template/character.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/res/template/portrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/style/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/layim/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/system/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/system/get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/system/more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/system/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/system/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/layuiadmin/tpl/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/contform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/tags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/content/tagsform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/forum/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/forum/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/forum/replys.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/forum/replysform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/mall/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/mall/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/mall/specs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/message/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/message/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/workorder/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/workorder/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/app/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/anim/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/auxiliar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/badge/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/button/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/carousel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/code/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/colorpicker/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/flow/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/form/element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/form/group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/mobile-pc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/speed-dial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/grid/stack.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laydate/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laydate/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laydate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laydate/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laydate/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/layer/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/layer/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/layer/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laypage/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laypage/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laypage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/laytpl/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/nav/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/panel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/progress/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/rate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/slider/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/auto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/cellEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/cellEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/data_backup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/data_backup2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/fixed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/height.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/initSort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/onrow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/operate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/parseData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/radio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/reload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/resetPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/static.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/style.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/thead.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/toolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/tostatic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/table/totalRow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/tabs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/timeline/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/upload/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/upload/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/upload/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/util/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/component/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/home/console.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/home/homepage1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/home/homepage2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/iframe/layer/iframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/img/20190331579910252971.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/img/delete_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/img/doT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/img/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/img/timg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/lunbo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/senior/echarts/bar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/senior/echarts/line.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/senior/echarts/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/senior/im/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/senior/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/set/system/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/set/system/website.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/set/user/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/set/user/password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/set/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/system/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/system/get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/system/more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/system/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/system/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/addresslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/caller.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/goodslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/msgboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/personalpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/tips/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/tips/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/template/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/administrators/adminform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/administrators/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/administrators/role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/administrators/roleform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/user/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/user/userform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/dist/views/user/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/console/prograss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/console/top-card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/console/top-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/content/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/content/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/content/tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/forum/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/forum/replys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/layer/photos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/layim/getList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/layim/getMembers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/mall/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/menu1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/message/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/message/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/message/direct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/message/new.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/message/notice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/table/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/table/demo2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/table/demo3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/table/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/table/user30.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/upload/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/forget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/reg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/resetpass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/user/sms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/useradmin/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/workorder/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/json/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/laydate/default/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/html/find.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/html/getmsg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/html/msgbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/mobile/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/skin/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/all-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/layim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile/layer-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile/layim-mobile-open.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile/layim-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile/upload-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/mobile/zepto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/lib/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/lib/extend/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/lib/extend/echartsTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/lib/view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/console.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/contlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/forum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/im.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/sample.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/senior.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/modules/workorder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/bg-none.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/logo-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/template/character.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/res/template/portrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/style/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/layim/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/system/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/system/get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/system/more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/system/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/system/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/layuiadmin/tpl/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/contform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/tags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/content/tagsform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/forum/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/forum/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/forum/replys.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/forum/replysform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/mall/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/mall/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/mall/specs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/message/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/message/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/workorder/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/workorder/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/app/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/anim/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/auxiliar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/badge/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/button/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/carousel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/code/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/colorpicker/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/flow/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/form/element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/form/group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/mobile-pc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/speed-dial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/grid/stack.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laydate/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laydate/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laydate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laydate/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laydate/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/layer/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/layer/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/layer/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laypage/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laypage/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laypage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/laytpl/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/nav/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/panel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/progress/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/rate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/slider/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/auto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/cellEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/cellEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/fixed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/height.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/initSort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/onrow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/operate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/parseData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/radio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/reload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/resetPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/static.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/style.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/thead.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/toolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/tostatic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/table/totalRow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/tabs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/timeline/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/upload/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/upload/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/upload/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/util/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/component/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/home/console.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/home/homepage1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/home/homepage2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/iframe/layer/iframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/senior/echarts/bar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/senior/echarts/line.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/senior/echarts/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/senior/im/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/senior/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/set/system/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/set/system/website.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/set/user/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/set/user/password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/set/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/system/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/system/get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/system/more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/system/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/system/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/addresslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/caller.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/goodslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/msgboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/personalpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/tips/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/tips/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/template/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/administrators/adminform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/administrators/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/administrators/role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/administrators/roleform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/user/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/user/userform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/src/views/user/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/帮助/官网.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/帮助/文档.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lib/layuiAdmin.std-v1.2.1/说明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin/editMyself.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin/editPassword.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/authorization/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index/error500.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/ruleTw/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/ruleTw/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckAdminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdminLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/admin/controller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/admin/controller.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/admin/controllerv3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/admin/controllerv3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/admin/controllerv4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/admin/controllerv4.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/admin/errors/error500.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/errors/errors.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/admin/web_route.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/admin/web_route.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/adminApi/api_route.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/adminApi/api_route.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/adminApi/controller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/adminApi/controller.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/api/api_route.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/api/api_route.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/api/controller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/controllers/api/controller.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/managers/MySQL/manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/manager/MongoDB/manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/managers/MongoDB/manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/managerv2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/managers/MySQL/managerv2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/managerv3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/managers/Redis/manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/model.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/models/MySQL/model.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/gcode/model/MongoDB/model.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gcode/models/MongoDB/model.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -744,11 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateFiles.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreateFiles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="344" column="32" selection-end-line="393" />
+            <state relative-caret-position="344">
+              <caret line="390" column="5" selection-start-line="264" selection-start-column="2" selection-end-line="390" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateMongoDBFiles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -772,8 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>device</find>
-      <find>local</find>
       <find>$var_name</find>
       <find>$columns_arr</find>
       <find>class_na</find>
@@ -802,6 +92,8 @@
       <find>.manager.</find>
       <find>/Controller/</find>
       <find>createAdminControllerStable</find>
+      <find>api.api_route</find>
+      <find>createModel</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -828,6 +120,8 @@
       <replace>createAdminControllerStable</replace>
       <replace>.managers.</replace>
       <replace>createAdminController</replace>
+      <replace>.controllers.</replace>
+      <replace>createMongoDBModel</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\gcode\storage\app\Models</dir>
@@ -857,7 +151,6 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/PartnerUserLoginDocManager.php" />
         <option value="C:/Windows/System32/drivers/etc/hosts" />
         <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Admin/StableV4/DeviceController.php" />
         <option value="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php" />
         <option value="$PROJECT_DIR$/storage/app/Code/Components/MongoDB/DeviceFaultCategoryManager.php" />
@@ -888,13 +181,14 @@
         <option value="$PROJECT_DIR$/storage/app/Code/Components/Stable/FreightRuleManager.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CheckToken.php" />
         <option value="$PROJECT_DIR$/resources/views/manager/MongoDB/manager.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$USER_HOME$/Desktop/hosts" />
         <option value="$PROJECT_DIR$/app/Components/Project.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Components/Common/Utils.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -1109,32 +403,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="managers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="managers" type="462c0819:PsiDirectoryNode" />
-              <item name="MySQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="managers" type="462c0819:PsiDirectoryNode" />
-              <item name="Redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1144,7 +412,7 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="MySQL" type="462c0819:PsiDirectoryNode" />
+              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -1371,12 +639,12 @@
       <workItem from="1577420717160" duration="587000" />
       <workItem from="1577496450359" duration="587000" />
       <workItem from="1577504585413" duration="792000" />
-      <workItem from="1577505897106" duration="5445000" />
+      <workItem from="1577505897106" duration="6026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541560000" />
+    <option name="totallyTimeSpent" value="542141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1423,7 +691,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/ExamOrderReportResultManager.php" />
     <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderReportResultDoc.php" />
     <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderReportDoc.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1490,13 +757,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/hosts" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1657,8 +917,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateFiles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="344" column="32" selection-end-line="393" />
+        <state relative-caret-position="344">
+          <caret line="390" column="5" selection-start-line="264" selection-start-column="2" selection-end-line="390" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

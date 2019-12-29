@@ -59,17 +59,12 @@ class CreateMongoDBFiles extends Command
             $controller_name = self::getControllerName($model_name);
             $manager_name = self::getManagerName($model_name);      //manager名
 
-            self::createModel($model_name, $table_name);            //建设model
+            self::createMongoDBModel($model_name, $table_name);            //建设model
 
-            self::createManager($model_name, $table_name, $manager_name, $columns_arr);     //建设Manager
-            self::createManagerV2($model_name, $table_name, $manager_name, $columns_arr); //建设V2版本的Manager
-            self::createManagerV3($model_name, $table_name, $manager_name, $var_name, $columns_arr); //建设V3版本的Manager
             self::createMongoDBManager($model_name, $table_name, $manager_name, $var_name, $columns_arr); //建设V3版本的Manager
 
             //生成AdminController
             self::createAdminController($model_name, $var_name, $controller_name, $router_blade_var_name);
-            self::createAdminControllerV3($model_name, $var_name, $controller_name, $router_blade_var_name);
-            self::createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name);
 
             //生成APIController
             self::createAPIController($model_name, $var_name, $controller_name, $router_blade_var_name);
@@ -96,7 +91,6 @@ class CreateMongoDBFiles extends Command
 
         //生成修改字符集的信息
         self::createAlertDB($table_names);
-
 
     }
 
@@ -189,85 +183,18 @@ class CreateMongoDBFiles extends Command
     }
 
     //生成Model文件
-    private function createModel($model_name, $table_name)
+    private function createMongoDBModel($model_name, $table_name)
     {
         $param = [
             'model_name' => $model_name,
             'table_name' => $table_name
         ];
-        $file_string = view('model/MongoDB/model', $param)->__toString();
+        $file_string = view('gcode.models.MongoDB.model', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
 
         $file_string = self::replaceTags($file_string);
 
         Storage::disk('local')->put('/Code/Models/MongoDB/' . $model_name . ".php", $file_string);
-    }
-
-
-    //生成Manager文件
-    private function createManager($model_name, $table_name, $manager_name, $columns_arr)
-    {
-        $columns = $columns_arr;
-        echo "\ncolumns:\n" . json_encode($columns) . "\n";
-
-        $param = [
-            'model_name' => $model_name,
-            'table_name' => $table_name,
-            'manager_name' => $manager_name,
-            'columns' => $columns,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('manager', $param)->__toString();
-        echo "\nmodel code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Components/V1/' . $manager_name . ".php", $file_string);
-    }
-
-
-    //生成ManagerV2文件
-    private function createManagerV2($model_name, $table_name, $manager_name, $columns_arr)
-    {
-        $columns = $columns_arr;
-        echo "\ncolumns:\n" . json_encode($columns) . "\n";
-
-        $param = [
-            'model_name' => $model_name,
-            'table_name' => $table_name,
-            'manager_name' => $manager_name,
-            'columns' => $columns,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('managerv2', $param)->__toString();
-        echo "\nmodel code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Components/Stable/' . $manager_name . ".php", $file_string);
-    }
-
-
-    //生成ManagerV3文件
-    private function createManagerV3($model_name, $table_name, $manager_name, $var_name, $columns_arr)
-    {
-        $columns = $columns_arr;
-        echo "\ncolumns:\n" . json_encode($columns) . "\n";
-
-        $param = [
-            'var_name' => $var_name,
-            'model_name' => $model_name,
-            'table_name' => $table_name,
-            'manager_name' => $manager_name,
-            'columns' => $columns,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('managerv3', $param)->__toString();
-        echo "\nmodel code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Components/Redis/' . $manager_name . ".php", $file_string);
     }
 
 
@@ -286,7 +213,7 @@ class CreateMongoDBFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('manager/MongoDB/manager', $param)->__toString();
+        $file_string = view('gcode.managers.MongoDB.manager', $param)->__toString();
         echo "\nmodel code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
@@ -304,52 +231,13 @@ class CreateMongoDBFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('admin.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.admin.controllerv4', $param)->__toString();
 
         echo "\nadmin.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Admin/V1/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/Admin/Stable/' . $controller_name . ".php", $file_string);
     }
-
-    //生成admin的controller文件
-    private function createAdminControllerV3($model_name, $var_name, $controller_name, $router_blade_var_name)
-    {
-        $param = [
-            'model_name' => $model_name,
-            'var_name' => $var_name,
-            'controller_name' => $controller_name,
-            'router_blade_var_name' => $router_blade_var_name,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('admin.controllerv3', $param)->__toString();
-
-        echo "\nadmin.controller code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Admin/Stable/' . $controller_name . ".php", $file_string);
-    }
-
-    //生成admin的controller文件
-    private function createAdminControllerV4($model_name, $var_name, $controller_name, $router_blade_var_name)
-    {
-        $param = [
-            'model_name' => $model_name,
-            'var_name' => $var_name,
-            'controller_name' => $controller_name,
-            'router_blade_var_name' => $router_blade_var_name,
-            'date_time' => DateTool::getCurrentTime()
-        ];
-
-        $file_string = view('admin.controllerv4', $param)->__toString();
-
-        echo "\nadmin.controller code string:\n" . $file_string . "\n";
-        $file_string = self::replaceTags($file_string);
-
-        Storage::disk('local')->put('/Code/Admin/StableV4/' . $controller_name . ".php", $file_string);
-    }
-
 
     //生成web route文件
     private function createWebRoute($route_param_items)
@@ -357,7 +245,7 @@ class CreateMongoDBFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('admin.web_route', $param)->__toString();
+        $file_string = view('gcode.controllers.admin.web_route', $param)->__toString();
 
         echo "\nweb route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -377,12 +265,13 @@ class CreateMongoDBFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('api.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.api.controller', $param)->__toString();
 
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Api/Stable/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/Api/Stable/' . $controller_name . ".php", $file_string);
+
     }
 
 
@@ -397,12 +286,12 @@ class CreateMongoDBFiles extends Command
             'date_time' => DateTool::getCurrentTime()
         ];
 
-        $file_string = view('adminApi.controller', $param)->__toString();
+        $file_string = view('gcode.controllers.adminApi.controller', $param)->__toString();
 
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/AdminApi/Stable/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/AdminApi/Stable/' . $controller_name . ".php", $file_string);
     }
 
 
@@ -412,7 +301,7 @@ class CreateMongoDBFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('api.api_route', $param)->__toString();
+        $file_string = view('gcode.controllers.api.api_route', $param)->__toString();
 
         echo "\napi route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -427,7 +316,7 @@ class CreateMongoDBFiles extends Command
         $param = [
             'route_param_items' => $route_param_items
         ];
-        $file_string = view('adminApi.api_route', $param)->__toString();
+        $file_string = view('gcode.controllers.adminApi.api_route', $param)->__toString();
 
         echo "\napi route string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -442,7 +331,7 @@ class CreateMongoDBFiles extends Command
         $param = [
             'table_names' => $table_names
         ];
-        $file_string = view('db.alertCharset', $param)->__toString();
+        $file_string = view('gcode.db.alertCharset', $param)->__toString();
 
         echo "\nalert charset string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
@@ -459,18 +348,5 @@ class CreateMongoDBFiles extends Command
         return $file_string;
     }
 
-
-    /*
-     * 获取全部属性数组
-     *
-     */
-    private function getColumnsArr($properties)
-    {
-        $columns_arr = [];
-        foreach ($properties as $property) {
-            array_push($columns_arr, $property);
-        }
-        return $columns_arr;
-    }
 
 }

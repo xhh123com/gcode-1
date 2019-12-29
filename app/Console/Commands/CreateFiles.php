@@ -312,7 +312,8 @@ class CreateFiles extends Command
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/Api/Stable/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/Api/Stable/' . $controller_name . ".php", $file_string);
+
     }
 
 
@@ -332,7 +333,7 @@ class CreateFiles extends Command
         echo "\napi.controller code string:\n" . $file_string . "\n";
         $file_string = self::replaceTags($file_string);
 
-        Storage::disk('local')->put('/Code/AdminApi/Stable/' . $controller_name . ".php", $file_string);
+        Storage::disk('local')->put('/Code/Controllers/AdminApi/Stable/' . $controller_name . ".php", $file_string);
     }
 
 
