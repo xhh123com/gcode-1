@@ -43,7 +43,7 @@ class CheckUserToken
             //获取用户信息
             $user = UserManager::getById($user_login->user_id);
             if (!$user || $user->status != Utils::COMMON_STATUS_1) {        //用户失效状态
-                return ApiResponse::makeResponse(false, ApiResponse::$errorMessage[ApiResponse::USER_ERRROR], ApiResponse::USER_ERRROR);
+                return ApiResponse::makeResponse(false, ApiResponse::$errorMessage[ApiResponse::ACCOUNT_INVALID], ApiResponse::ACCOUNT_INVALID);
             }
             $request->merge(['self_user_id' => $user_login->user_id]);//合并参数，加入self_user_id
         } else {

@@ -92,4 +92,20 @@ php artisan auto:createMongoDBFiles
 #2019年12月进行了优化
 Common文件夹下是团队整理的Manager工具类，包括极光推送、环信IM、声网等
 
+#2019年12月29日针对gcode进行了目录结构的优化
+
+- 如果是MySQL的数据库，则
+
+```angular2html
+php artisan auto:createFiles
+```
+
+- 如果是mongodb的数据库，则
+
+```angular2html
+php artisan auto:createMongoDBFiles
+```
+
+生成代码放置在/storage/app/Code下面
+
 

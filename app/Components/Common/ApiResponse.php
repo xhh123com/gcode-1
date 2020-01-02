@@ -12,15 +12,15 @@ class ApiResponse
 {
     /* 错误码表 */
 
+    // 成功
+    const SUCCESS_CODE = 200;
+
     // 通用错误
-    const UNKNOW_ERROR = 999;
     const MISSING_PARAM = 901;
     const INNER_ERROR = 902;
     const UPLOAD_ERROR = 903;
     const SECRET_ERROR = 904;
-
-    // 成功
-    const SUCCESS_CODE = 200;
+    const UNKNOW_ERROR = 999;
 
     // 用户相关
     const TOKEN_LOST = 101;
@@ -32,6 +32,7 @@ class ApiResponse
     const VERTIFY_ERROR = 107;
     const PHONENUM_DUP = 108;
     const PHONENUM_ALREAD_REGISTED = 109;
+
     const LOGIN_ERROR = 110;
     const CAN_NOT_FIND_ACCOUTN = 111;
     const ORIGIN_PASSWORD_ERROR = 112;
