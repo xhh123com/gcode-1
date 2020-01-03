@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Components\DateTool;
+use App\Components\Common\DateTool;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;

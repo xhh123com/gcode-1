@@ -2,50 +2,246 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="919b4ba3-9d44-4546-ac51-29995aea7254" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/CardDoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/GameLogDoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserCardDoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserRelDoc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserWeekRankingDoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Components/DateTool.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminLoginDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminLoginDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AllocDeviceTaskDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceEditLogDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultCategoryDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceFaultHandleRecordDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceLogDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceRechargeFaultDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceRechargeOrderDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/DeviceSetLogDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderIndicatorResultDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderPostureResultDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/ExamOrderReportDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorAlertRuleDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/IndicatorDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/LifeSystemLevel1TypeDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/MotionSystemAdviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/NutritionSystemAdviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/OffiAccountMenuDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/OffiAccountSpeechTempDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PadVersionDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyActivityDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDeviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerCompanyStoreDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDeviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerContractDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/PartnerUserLoginDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserLoginDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/TotalScoreAdviceDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MongoDB/Models/Doc/UserDoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MongoDB/Models/Doc/VertifyCodeDoc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateFiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/AdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/AdminLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/AdminManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/BankManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/CityManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/CollectManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/CommentManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/CompanyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/CouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/DailyCheckOrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/OrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ProductLevel1TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ProductLevel2TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/RuleTwManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ScoreRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ScoreRuleManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopClerkLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopClerkManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopContractManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopSettlementManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopStoreManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/SubProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/UserCouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/UserLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/UserManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/UserShopClerkApplyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/VericodeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/VericodeVerifyRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/VertifyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/XcxFormIdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ZanManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/AdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/AdminLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/AdminManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/BankManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/CityManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/CollectManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/CommentManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/CompanyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/CouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/DailyCheckOrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/OrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ProductLevel1TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ProductLevel2TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/RuleTwManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ScoreRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ScoreRuleManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopClerkLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopClerkManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopContractManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopSettlementManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ShopStoreManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/SubProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/UserCouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/UserLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/UserManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/UserShopClerkApplyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/VericodeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/VericodeVerifyRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/VertifyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/XcxFormIdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/MySQL/V1/ZanManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/AdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/AdminLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/AdminManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/BankManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/CityManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/CollectManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/CommentManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/CompanyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/CouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/DailyCheckOrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/OrderManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ProductLevel1TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ProductLevel2TypeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/RuleTwManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ScoreRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ScoreRuleManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopClerkLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopClerkManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopContractManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopSettlementManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ShopStoreManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/SubProductManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/UserCouponManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/UserLoginManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/UserManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/UserShopClerkApplyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/VericodeManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/VericodeVerifyRecordManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/VertifyManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/XcxFormIdManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Components/Redis/ZanManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/AdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/AdminLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/BankController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/CityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/CollectController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/CommentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/CompanyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/CouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/DailyCheckOrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ProductLevel1TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ProductLevel2TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/RuleTwController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ScoreRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ScoreRuleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopClerkController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopClerkLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopContractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopSettlementController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopStoreController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/SubProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/UserCouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/UserLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/UserShopClerkApplyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/VericodeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/VericodeVerifyRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/VertifyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/XcxFormIdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ZanController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/AdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/AdminLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/BankController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/CityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/CollectController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/CommentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/CompanyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/CouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/DailyCheckOrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ProductLevel1TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ProductLevel2TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/RuleTwController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ScoreRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ScoreRuleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopClerkController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopClerkLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopContractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopSettlementController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ShopStoreController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/SubProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/UserCouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/UserLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/UserShopClerkApplyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/VericodeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/VericodeVerifyRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/VertifyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/XcxFormIdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/AdminApi/Stable/ZanController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/AdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/AdminLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/BankController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/CityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/CollectController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/CommentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/CompanyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/CouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/DailyCheckOrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ProductLevel1TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ProductLevel2TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/RuleTwController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ScoreRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ScoreRuleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopClerkController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopClerkLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopContractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopSettlementController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ShopStoreController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/SubProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/UserCouponController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/UserLoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/UserShopClerkApplyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/VericodeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/VericodeVerifyRecordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/VertifyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/XcxFormIdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Controllers/Api/Stable/ZanController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/DB/alertChartset.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Ad.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/AdminLogin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Bank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/City.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Collect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Company.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Coupon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/DailyCheckOrder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ProductLevel1Type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ProductLevel2Type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/RuleTw.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ScoreRecord.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ScoreRule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Shop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ShopClerk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ShopClerkLogin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ShopContract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ShopSettlement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/ShopStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/SubProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/UserCoupon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/UserLogin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/UserShopClerkApply.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Vericode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/VericodeVerifyRecord.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Vertify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/XcxFormId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Models/Mysql/Zan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Route/admin_api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Route/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/Code/Route/web.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,88 +255,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5111">
-              <caret line="269" selection-start-line="269" selection-end-line="270" selection-end-column="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/AdController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2869">
-              <caret line="162" selection-start-line="118" selection-start-column="2" selection-end-line="162" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/AdManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="33" selection-start-line="33" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopStoreManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopStoreManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="72" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="72" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopClerkManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopClerkManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopClerkController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopClerkController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="134" column="5" selection-start-line="118" selection-start-column="4" selection-end-line="134" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminDoc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/MongoDB/Models/Doc/AdminDoc.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="DateTool.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Components/Common/DateTool.php">
+      <file leaf-file-name="CreateMongoDBFiles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="770" column="5" selection-end-line="772" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="212" column="28" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopStoreController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopStoreController.php">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
-              <caret line="118" selection-start-line="118" selection-end-line="134" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="35" selection-start-line="35" selection-end-line="37" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="75" selection-start-line="75" selection-end-line="81" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -149,7 +291,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>expired</find>
       <find>downlo</find>
       <find>unit</find>
       <find>task</find>
@@ -179,6 +320,7 @@
       <find>vericodeVerifyRecord</find>
       <find>delete</find>
       <find>dele</find>
+      <find>DateTool</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -216,6 +358,9 @@
       <dir>D:\xampp\htdocs\gcode\storage\app</dir>
       <dir>D:\xampp\htdocs\gcode\storage\app\Code\ytx.api_php</dir>
       <dir>D:\xampp\htdocs\gcode\app</dir>
+      <dir>D:\wwwroot\gcode\app\Components</dir>
+      <dir>D:\wwwroot\gcode\resources\views</dir>
+      <dir>D:\wwwroot\gcode</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -417,13 +562,6 @@
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gcode" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Easemob" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -484,6 +622,11 @@
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -513,6 +656,15 @@
               <item name="storage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -533,6 +685,50 @@
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
               <item name="Stable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Stable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcode" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcode" type="b2602c69:ProjectViewProjectNode" />
@@ -762,12 +958,12 @@
       <workItem from="1577830153260" duration="1827000" />
       <workItem from="1577897304367" duration="2390000" />
       <workItem from="1578013645526" duration="3102000" />
-      <workItem from="1578072298554" duration="776000" />
+      <workItem from="1578072298554" duration="1421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="555275000" />
+    <option name="totallyTimeSpent" value="555920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -783,6 +979,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25113463" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -792,7 +989,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,13 +1051,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/gcode/controllers/admin/web_route.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MongoDB/AdminManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/admin_api.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -918,13 +1107,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/OffiAccountMenuManager.php" />
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/OffiAccountSpeechTempManager.php" />
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Components/AXB/HuaWei/AXBTool.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -982,52 +1164,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5111">
-          <caret line="269" selection-start-line="269" selection-end-line="270" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/AdController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2869">
-          <caret line="162" selection-start-line="118" selection-start-column="2" selection-end-line="162" />
+          <caret line="162" selection-start-line="142" selection-start-column="25" selection-end-line="162" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/AdManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="33" selection-start-line="33" selection-end-line="59" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopStoreManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
-          <caret line="72" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="72" selection-end-column="5" />
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Components/MySQL/Stable/ShopClerkManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="45" />
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopStoreController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2033">
-          <caret line="118" selection-start-line="118" selection-end-line="134" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopClerkController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="134" column="5" selection-start-line="118" selection-start-column="4" selection-end-line="134" selection-end-column="5" />
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
@@ -1036,8 +1204,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Components/Common/DateTool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="770" column="5" selection-end-line="772" selection-end-column="1" />
+        <state relative-caret-position="114">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Controllers/Admin/Stable/ShopClerkController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/CreateMongoDBFiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="212" column="28" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="35" selection-start-line="35" selection-end-line="37" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/Code/Route/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="75" selection-start-line="75" selection-end-line="81" selection-end-column="103" />
         </state>
       </provider>
     </entry>
