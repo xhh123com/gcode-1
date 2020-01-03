@@ -20,7 +20,7 @@ class AdminLoginDoc
     private $ve_value2;    //验证数据2
     private $login_at;    //登录时间
     private $valid_time;    //有效时间
-    private $seq = 99;        //排序       值越大越靠前
+    private $seq = 99;       //排序       值越大越靠前
     private $status = '1';        //状态        0：失效 1：生效
 
 }

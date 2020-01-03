@@ -18,9 +18,10 @@ class AdminDoc
     private $phonenum;      //手机号
     private $email;      //邮箱
     private $remark;       //备注
-    private $role;          //角色  类型 101:设备管理员（100-199） 200：超级管理员（200-299）
+    private $token;       //token串
+    private $role = '0';          //角色 0：超级管理员 1:普通管理员 2:客服
     private $admin_id;          //创建管理员id
-    private $seq = 99;        //排序       值越大越靠前
+    private $seq = 99;       //排序       值越大越靠前
     private $status = '1';        //状态        0：失效 1：生效
 
 }

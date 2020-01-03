@@ -1,0 +1,208 @@
+<?php
+
+/**
+* 用于修改数据库的字符集
+*/
+
+
+ALTER DATABASE ylcdb CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+
+
+    ALTER TABLE `t_ad_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_ad_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_admin_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_admin_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_admin_login` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_admin_login` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_bank_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_bank_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_city_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_city_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_collect_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_collect_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_comment_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_comment_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_company_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_company_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_coupon_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_coupon_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_daily_check_order` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_daily_check_order` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_order_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_order_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_product_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_product_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_product_level1_type` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_product_level1_type` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_product_level2_type` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_product_level2_type` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_rule_tw` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_rule_tw` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_score_record` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_score_record` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_score_rule` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_score_rule` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_clerk` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_clerk` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_clerk_login` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_clerk_login` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_contract` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_contract` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_settlement` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_settlement` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_shop_store` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_shop_store` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_sub_product` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_sub_product` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_user_coupon` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_user_coupon` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_user_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_user_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_user_login` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_user_login` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_user_shop_clerk_apply` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_user_shop_clerk_apply` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_vericode_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_vericode_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_vericode_verify_record` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_vericode_verify_record` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_vertify_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_vertify_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_xcx_formId` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_xcx_formId` AUTO_INCREMENT=1200000;
+    
+    
+
+
+    ALTER TABLE `t_zan_info` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
+    ALTER TABLE `t_zan_info` AUTO_INCREMENT=1200000;
+    
+    
+
+
