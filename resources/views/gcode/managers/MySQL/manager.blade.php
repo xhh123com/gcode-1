@@ -84,6 +84,11 @@ class {{$manager_name}}
     {
         $info->status_str = Utils::COMMON_STATUS_VAL[$info->status];
 
+        //图片转数组，2020-01-19 TerryQi补充了img转数组，img一般定义为图片链接，多张图片用逗号分隔
+        if ($info->img) {
+            $info->img_arr = explode(",", $info->img);
+        }
+
         //0:
         if (strpos($level, '0') !== false) {
 
