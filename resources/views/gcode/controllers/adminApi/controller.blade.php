@@ -74,7 +74,10 @@ class {{$model_name}}Controller
         //过中间件一定存在
         $self_admin = AdminManager::getById($data['self_admin_id']);
 
+        //自定义参数位置
         $status = '1';
+
+        //分页和信息级别
         $is_paginate = true;
         $level='Y';
         //参数配置

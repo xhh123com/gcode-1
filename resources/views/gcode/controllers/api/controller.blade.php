@@ -59,9 +59,13 @@ class {{$model_name}}Controller
     public function getListByCon(Request $request)
     {
         $data = $request->all();
+        //自定义参数位置
         $status = '1';
+
+        //分页和信息级别
         $is_paginate = true;
         $level='Y';
+
         //参数配置
         if (array_key_exists('status', $data) && !Utils::isObjNull($data['status'])) {
             $status = $data['status'];
