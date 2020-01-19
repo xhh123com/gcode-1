@@ -62,6 +62,10 @@ class {{$model_name}}Controller
         $status = '1';
         $is_paginate = true;
         $level='Y';
+        //参数配置
+        if (array_key_exists('status', $data) && !Utils::isObjNull($data['status'])) {
+            $status = $data['status'];
+        }
         //配置获取信息级别
         if (array_key_exists('level', $data) && !Utils::isObjNull($data['level'])) {
             $level = $data['level'];
