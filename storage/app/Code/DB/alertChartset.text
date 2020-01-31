@@ -8,9 +8,3 @@
 ALTER DATABASE learndb CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
 
 
-    ALTER TABLE `product` CONVERT TO CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
-    ALTER TABLE `product` AUTO_INCREMENT=1200000;
-    
-    
-
-
